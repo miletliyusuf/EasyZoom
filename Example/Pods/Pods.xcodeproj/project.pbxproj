@@ -1,0 +1,2009 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02A65280343D7380DAA25710 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F98D661BD5BBB86AAC402B47 /* Foundation.framework */; };
+		037A5D17FE37217C4AB04C8A /* NSString+QCKSelectorName.h in Headers */ = {isa = PBXBuildFile; fileRef = F9CCA2E11E7860FC051C073C /* NSString+QCKSelectorName.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		062A0C996C7C26CB5073D1C6 /* DSL+Wait.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC17E9CA9E4A4EFA9BD26A89 /* DSL+Wait.swift */; };
+		0765BB4A56281C77E1816328 /* FullMatcherWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF247209195FC20FF2C85AD5 /* FullMatcherWrapper.swift */; };
+		085F73CDE75689D56C49D22D /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45ABCD56A56043A2CFECCCD6 /* Quick.framework */; };
+		0BE5DE29AA29C381BF3A4376 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F98D661BD5BBB86AAC402B47 /* Foundation.framework */; };
+		0D51DE1427B7D0698F9D2F22 /* Pods-EasyZoom_Tests-Nimble-Snapshots-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 759CA615101799EDCDE628D3 /* Pods-EasyZoom_Tests-Nimble-Snapshots-dummy.m */; };
+		0DC65A7A97415080A8350C41 /* Pods-EasyZoom_Tests-FBSnapshotTestCase-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 93FF0C06344C63653AFDB378 /* Pods-EasyZoom_Tests-FBSnapshotTestCase-dummy.m */; };
+		119D2B0277CF5ED95B296F23 /* Pods-EasyZoom_Tests-EasyZoom-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A7D7E9D0AEC6EC6E8A8C25C /* Pods-EasyZoom_Tests-EasyZoom-dummy.m */; };
+		12A3493D0B12CA5DF802ECF1 /* Pods-EasyZoom_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 64BA3F662E87FCDAE33EE757 /* Pods-EasyZoom_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1517E6A0A46B30138A5F18E9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F98D661BD5BBB86AAC402B47 /* Foundation.framework */; };
+		185E3A065ACA538876658096 /* AllPass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE0641BA738DA00AABCF76D /* AllPass.swift */; };
+		194E13218CC04E22FECDC5DE /* BeLessThan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55304DE7DAFA2F4EC03D17D9 /* BeLessThan.swift */; };
+		199313CC6CADDB0158E9D36C /* UIImage+Compare.h in Headers */ = {isa = PBXBuildFile; fileRef = 723A6C578A5DB0E939A519C6 /* UIImage+Compare.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1BDD201632D5759F737CB06A /* FBSnapshotTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 534E93619B639A9C617B3599 /* FBSnapshotTestController.m */; };
+		1D5693EFBCE73CBD7B1DF917 /* DSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7261A91717DD94E5EDF5E279 /* DSL.swift */; };
+		1E28B0795B9E742E786226B3 /* Pods-EasyZoom_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BC9645B5804621492921DB42 /* Pods-EasyZoom_Example-dummy.m */; };
+		1E9AD5817B26E7E34A2AB69E /* Pods-EasyZoom_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C78DCEB326CABAD758EEC177 /* Pods-EasyZoom_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		25F5EA956AE13DF81DB52671 /* SuiteHooks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA146904AA6FD8A94C17542 /* SuiteHooks.swift */; };
+		26E80C7FC0AAAB8643D8281C /* Pods-EasyZoom_Tests-EasyZoom-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E0BD8C052DB6BB93335E887A /* Pods-EasyZoom_Tests-EasyZoom-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2856B076C74AC010CA9FFA0D /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACD0C1E71C3A6DE5CF5CEDC6 /* XCTest.framework */; };
+		2AF3769F1A93D3AC392A8889 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F98D661BD5BBB86AAC402B47 /* Foundation.framework */; };
+		2C8EF86EC218613C76ABB54B /* BeNil.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13830442C885BDEFD240368 /* BeNil.swift */; };
+		2F886CD2D1AB5F01CE33C106 /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3859A3F40DB58F6CFE95B3C7 /* Expression.swift */; };
+		30050C3EB870C92B562C018F /* DSL.h in Headers */ = {isa = PBXBuildFile; fileRef = 2ADDD4690892F7DAF60BB5F7 /* DSL.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37165F755F0FBFD1341AB7F8 /* Poll.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E11617F76F0A8A2DCE8807 /* Poll.swift */; };
+		38307643592DCDC246FC996E /* Functional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D62E0CF2B8EA36B82BCD3C8 /* Functional.swift */; };
+		3C020F949FD4B3B4EB6D6877 /* BeLessThanOrEqual.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBB670277E476C4296949AB /* BeLessThanOrEqual.swift */; };
+		3DE52EBDC52E836ABF6C8FF5 /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9AF5B3D111FDB29C5A14F9 /* Example.swift */; };
+		3FFD4AB5E2680BD7B5EE285A /* NMBExceptionCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D2B0EE82773A13ECF2C6DFE /* NMBExceptionCapture.m */; };
+		41003FBDB7838D7C9EA2FB90 /* BeLogical.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D3AD0C5D29AF9FD6C04203 /* BeLogical.swift */; };
+		421A9236BAFF63326C237ED4 /* ExampleMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E3E0EAEB928C9A16E18615 /* ExampleMetadata.swift */; };
+		422FB0B3D679C35AF48EEA63 /* QuickSpec.h in Headers */ = {isa = PBXBuildFile; fileRef = AD2322F43DE366D265933301 /* QuickSpec.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42F5FEA757734EAF10AB9992 /* NSString+QCKSelectorName.m in Sources */ = {isa = PBXBuildFile; fileRef = BE00A10D3FDAC560896CD906 /* NSString+QCKSelectorName.m */; };
+		4342F20E2C5B74043AAB8553 /* AsyncMatcherWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB3F5414AD777A72D932F8D /* AsyncMatcherWrapper.swift */; };
+		446EDE301F875FD89262D0E5 /* QuickSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 15E5F7CE62732DD9CD101EB1 /* QuickSpec.m */; };
+		45640C50DEA0310F434FB470 /* FBSnapshotTestCasePlatform.m in Sources */ = {isa = PBXBuildFile; fileRef = 53D526CF41572A378EEC6B3A /* FBSnapshotTestCasePlatform.m */; };
+		45E33B7EB8C24AC528DEDA84 /* Closures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBD8045BE0B941967FADF3D /* Closures.swift */; };
+		487096C11902C8A663FC52EC /* QuickConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 12902C1B06BE89564FD05975 /* QuickConfiguration.m */; };
+		48BA5B498932DD0D4C28E550 /* NonNilMatcherWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD97BA1FE51BC2A4D2C2FE38 /* NonNilMatcherWrapper.swift */; };
+		4968164E3806EF14D49D1153 /* Pods-EasyZoom_Example-EasyZoom-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC0F6F5C54CA690998C78FD /* Pods-EasyZoom_Example-EasyZoom-dummy.m */; };
+		4A3255DCD5DFD3BE2EB5BA2E /* BeIdenticalTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2514721C52B93FEE1B2EFB /* BeIdenticalTo.swift */; };
+		4B318E0EA65255DB3CC33738 /* UIImage+Diff.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E8AF8C2C90A3F9113035C1 /* UIImage+Diff.m */; };
+		4DC012E2DF6C9402716F08BB /* QCKDSL.h in Headers */ = {isa = PBXBuildFile; fileRef = 4972E63DC384F65849AE31C1 /* QCKDSL.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		50D572059B66AA91303F2E26 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F98D661BD5BBB86AAC402B47 /* Foundation.framework */; };
+		51CC1C26C417E6020861FBEF /* BeEmpty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2352FDDE9F9223654B724DE3 /* BeEmpty.swift */; };
+		5305380F0C49FEBAEF3FCBD3 /* AssertionRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B97B7E3D6B65BC34281A7A /* AssertionRecorder.swift */; };
+		531AF702D4DC282A31D772CD /* NimbleXCTestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F5C47B4F01EDA7A2337DD6 /* NimbleXCTestHandler.swift */; };
+		554F15602A3AD610EF173786 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E30E4143BC6BF77CE92687C6 /* Nimble.framework */; };
+		57138B76DA5B46D4CE159B9D /* World.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60BE0251386DC53F3265E944 /* World.swift */; };
+		5AD5143254C9E6E9D4DD6450 /* SourceLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C033A4B606A6BD642B2D8B /* SourceLocation.swift */; };
+		5C51A58E508FBAD450A52489 /* ExampleGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453E6598051DF8DE610C7CE2 /* ExampleGroup.swift */; };
+		5F451303C62818DDB7C62437 /* ExampleHooks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654ACBED0D9D345B712EB153 /* ExampleHooks.swift */; };
+		6035F76C7531C2BB8A34E4C9 /* Pods-EasyZoom_Tests-Quick-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D0BFE99BD9317AE8B7E952 /* Pods-EasyZoom_Tests-Quick-dummy.m */; };
+		604A12A01C934EA2BA076112 /* Pods-EasyZoom_Example-EasyZoom-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E27226EDCAE2489432389AE2 /* Pods-EasyZoom_Example-EasyZoom-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		60DB839BD09DA7B9B64AA07E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F98D661BD5BBB86AAC402B47 /* Foundation.framework */; };
+		61E8AD771873C0ECCE8BC400 /* Callsite.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB61ABBFE636131278580457 /* Callsite.swift */; };
+		623501F7FDD9682C17C79BDD /* UIImage+Compare.m in Sources */ = {isa = PBXBuildFile; fileRef = A371A556923ADF29D726A6DE /* UIImage+Compare.m */; };
+		688B4D97E5A0A8963BAA9970 /* BeGreaterThanOrEqualTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A95E7C7232B6571F36BA8FE /* BeGreaterThanOrEqualTo.swift */; };
+		6D7FC40815461CE649C2539B /* DSL.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AB4D2AD0F31FE375F0D7CCA /* DSL.m */; };
+		72ABB96B0A9011EA67D4CBFB /* Pods-EasyZoom_Tests-Quick-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C6A74E41F7A9A2DF24CA137D /* Pods-EasyZoom_Tests-Quick-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		72CD6702A8910715E911EF6F /* Failure.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7B64F03F1BD78FFCFF9AB2 /* Failure.swift */; };
+		73D3C418DD18F6663459B448 /* QuickConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = EEACFB7C62CE7FFFC3A9F34D /* QuickConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7463EC062C14AD87D453799D /* FailureMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7B742E821EA6626C525CE1 /* FailureMessage.swift */; };
+		7569EA72B996CB4342BCEBA0 /* Stringers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902A9E9047C4EEBD9090522E /* Stringers.swift */; };
+		777AE9970E427AE4C4B87F13 /* Pods-EasyZoom_Tests-Nimble-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB9C879EE221D1DF137B0C6 /* Pods-EasyZoom_Tests-Nimble-dummy.m */; };
+		77C0C6F22C69E01867B1112C /* PrettySyntax.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9127AD19133F7A242BC63798 /* PrettySyntax.swift */; };
+		7C4FA71B4E453F9152A9FC4D /* BeAKindOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = A525324906454C76D73F7DA7 /* BeAKindOf.swift */; };
+		7F821E7EF86365BB16DC0C49 /* Quick.h in Headers */ = {isa = PBXBuildFile; fileRef = A23B635EA69AC78305D4F4DF /* Quick.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8019561F7F4BD51B793FE312 /* BeGreaterThan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825B772A85B0A3488EFE4EF0 /* BeGreaterThan.swift */; };
+		8295889F8FD4925630BBAC9F /* HaveValidSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9ADEE3B190F3BC2038F149 /* HaveValidSnapshot.swift */; };
+		88193CAA4E7C1C1AA2F6F93F /* FBSnapshotTestCasePlatform.h in Headers */ = {isa = PBXBuildFile; fileRef = 73B86E52FBC6A54910119EDA /* FBSnapshotTestCasePlatform.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8D75DD963A41EFC85096E10E /* BeCloseTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6ADD448A54327BBDD85D7BE /* BeCloseTo.swift */; };
+		8FF5C564B8A1CD6D5D3B95F8 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACD0C1E71C3A6DE5CF5CEDC6 /* XCTest.framework */; };
+		9606E735EF682FC2B855CF3F /* Pods-EasyZoom_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B240BD8EA16A2D59C0835ED /* Pods-EasyZoom_Tests-dummy.m */; };
+		9621C01B05ABD064C0C6DA84 /* MatcherFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720BAB6CEB74C5F6A0BC9880 /* MatcherFunc.swift */; };
+		962E05C3AC0C2DBA747282F9 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACD0C1E71C3A6DE5CF5CEDC6 /* XCTest.framework */; };
+		97428F78D1850315B3D8DA26 /* EndWith.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67FBE047913551E7073C4428 /* EndWith.swift */; };
+		997C25D1D73E0F064DC9D6B8 /* FBSnapshotTestCase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3472D49F1596AA7549032240 /* FBSnapshotTestCase.framework */; };
+		9A4AF5AA52E711A9D369E8C8 /* NMBExceptionCapture.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B38D164406A24C2EDB81D55 /* NMBExceptionCapture.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9BC8D0F2F024290F4277AC3B /* Expectation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D519FDE13E94C87C1AEAF13A /* Expectation.swift */; };
+		A029F7EA8157929F9951A6BF /* BeginWith.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBB2C9E33DD89299AB6CE25 /* BeginWith.swift */; };
+		A1E667626E7015F8E460ABC8 /* World+DSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF698347938BEDFC5BF5A93 /* World+DSL.swift */; };
+		A270C2365171185629E211B2 /* FBSnapshotTestController.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FC60F8E7B35788E49D71580 /* FBSnapshotTestController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A66D468EA930B0867F9C8AE8 /* Pods-EasyZoom_Tests-FBSnapshotTestCase-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FB7BA08630F9FB7C8737A07E /* Pods-EasyZoom_Tests-FBSnapshotTestCase-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B100F224C714FFB830D002CB /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AA55BF22C1AF6F563C4BCE /* Configuration.swift */; };
+		B3DF8F65EEE4D390E21CAB3A /* AdapterProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2560F00DE79F4C87C90F9D3 /* AdapterProtocols.swift */; };
+		BF4168ED3638AA54F8BD8121 /* Equal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6879E3E9F67947CC7E7AD1C5 /* Equal.swift */; };
+		C89AECA16B9A68C1A45E4ADF /* FBSnapshotTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 74E7BA5ABDE8DE0C2340C076 /* FBSnapshotTestCase.m */; };
+		C9E7E32BCBAE23A7751DA6B0 /* EasyZoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38411CE8335DB9EE25886CFB /* EasyZoom.swift */; };
+		CA749CFD338B8C87CAA14D5D /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34070596601C9ACFF5EED1DC /* Match.swift */; };
+		CD51431A86287FB55FC621DF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F98D661BD5BBB86AAC402B47 /* Foundation.framework */; };
+		D2EDC961772C85C0455B347D /* Contain.swift in Sources */ = {isa = PBXBuildFile; fileRef = E389BBCEC3E7EAE79A4F7371 /* Contain.swift */; };
+		DA516F144B3D83B0D8EFECAC /* MatcherProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD798724643B8C9CAEB84DD6 /* MatcherProtocols.swift */; };
+		DAB632F710C935CCE2F5DA03 /* Pods-EasyZoom_Tests-Nimble-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 52A7F537F6D86744129DBA3D /* Pods-EasyZoom_Tests-Nimble-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DC137E8771C030CADE5C7D44 /* BasicMatcherWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7D63AB0FE234EF0591B01B /* BasicMatcherWrapper.swift */; };
+		DC24D6B237FA5F9DA86D437D /* QCKDSL.m in Sources */ = {isa = PBXBuildFile; fileRef = BCA7B805608E229B5560D867 /* QCKDSL.m */; };
+		DC9A918E9DCDFBF690B02933 /* UIImage+Diff.h in Headers */ = {isa = PBXBuildFile; fileRef = 5885BCB38A7195E8FFF92ACD /* UIImage+Diff.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DDEE05831DB3421DFF75EF70 /* Nimble.h in Headers */ = {isa = PBXBuildFile; fileRef = 24402193D9344C6621B24F5F /* Nimble.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E3844F6BA034D2A4CFB2521E /* EasyZoom.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 959D443B5622F5FEFDCA64CE /* EasyZoom.bundle */; };
+		E3858A5993CE70956EF54C6E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACD0C1E71C3A6DE5CF5CEDC6 /* XCTest.framework */; };
+		E3D7F638C9D36FEEB83CB207 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F98D661BD5BBB86AAC402B47 /* Foundation.framework */; };
+		E7AEE32C09F2DF1E25F27CCD /* EasyZoom.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CA5CFEA20E42A1714EEBE2A7 /* EasyZoom.bundle */; };
+		E9246483EF2E6073A11EFF61 /* RaisesException.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54C3E5113B4338A81BB0CE8 /* RaisesException.swift */; };
+		EC1DC4E3316C1534E27ED215 /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD8C2573C0D749537F841FA /* Filter.swift */; };
+		EE486C229834F3FB1927C0F1 /* EasyZoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38411CE8335DB9EE25886CFB /* EasyZoom.swift */; };
+		EF1ECEB9F7197A4CFD22CB7E /* Pods-EasyZoom_Tests-Nimble-Snapshots-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A17290269C74E13CA0C05F8 /* Pods-EasyZoom_Tests-Nimble-Snapshots-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F03132B9BC665ECAE816B646 /* ObjCMatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BB3A3ABE849531625411FB /* ObjCMatcher.swift */; };
+		F1FEE044F0FF2A2951AAF93C /* DSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708FCE90A07A37B46A2E5EEC /* DSL.swift */; };
+		F334121BEFF584238F2B9E5A /* FBSnapshotTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = 1ACADC7785507E1CF76926B8 /* FBSnapshotTestCase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F8DFED4AC9E23F605940E969 /* BeAnInstanceOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B45739CF7B6043AAA3801A2 /* BeAnInstanceOf.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		07DE32389B8965C7295AE7C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 10D6FCBEF4C3E70E1B456B2A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 65C9AB9F613288D9668075A6;
+			remoteInfo = "Pods-EasyZoom_Tests-FBSnapshotTestCase";
+		};
+		37FD4F262F338934E75B96C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 10D6FCBEF4C3E70E1B456B2A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F59301BC73A5E60E7DA0487A;
+			remoteInfo = "Pods-EasyZoom_Tests-Nimble";
+		};
+		4539514C0453B98F799EDA69 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 10D6FCBEF4C3E70E1B456B2A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C3039210FE60EB86507F700A;
+			remoteInfo = "Pods-EasyZoom_Example-EasyZoom-EasyZoom";
+		};
+		50CD834D2A9E193D114480B8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 10D6FCBEF4C3E70E1B456B2A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7B43A3BF17C60D7889E0CC46;
+			remoteInfo = "Pods-EasyZoom_Example-EasyZoom";
+		};
+		5A1492A20BE030DD7A54A356 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 10D6FCBEF4C3E70E1B456B2A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC2E0FF7CC308F11DA6A81CF;
+			remoteInfo = "Pods-EasyZoom_Tests-Quick";
+		};
+		66A42079670F068A10D68874 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 10D6FCBEF4C3E70E1B456B2A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B2DC15A44881981A64F8B384;
+			remoteInfo = "Pods-EasyZoom_Tests-EasyZoom-EasyZoom";
+		};
+		76E1D43D2FEF4EF11A138453 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 10D6FCBEF4C3E70E1B456B2A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FDBC6A66D4765386326430B6;
+			remoteInfo = "Pods-EasyZoom_Tests-Nimble-Snapshots";
+		};
+		9EFBAC846453BE6AFD59AE40 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 10D6FCBEF4C3E70E1B456B2A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F59301BC73A5E60E7DA0487A;
+			remoteInfo = "Pods-EasyZoom_Tests-Nimble";
+		};
+		B09D04A57CA7A2105E8666E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 10D6FCBEF4C3E70E1B456B2A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC2E0FF7CC308F11DA6A81CF;
+			remoteInfo = "Pods-EasyZoom_Tests-Quick";
+		};
+		B8710C1D7115F4998C812FAA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 10D6FCBEF4C3E70E1B456B2A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 65C9AB9F613288D9668075A6;
+			remoteInfo = "Pods-EasyZoom_Tests-FBSnapshotTestCase";
+		};
+		D554FBBEE03847FC57C34F6A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 10D6FCBEF4C3E70E1B456B2A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3CF663156049DC08BF427ED2;
+			remoteInfo = "Pods-EasyZoom_Tests-EasyZoom";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02CE1C573DF041310E3E7C35 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09C033A4B606A6BD642B2D8B /* SourceLocation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SourceLocation.swift; path = Nimble/Utils/SourceLocation.swift; sourceTree = "<group>"; };
+		0C9ADEE3B190F3BC2038F149 /* HaveValidSnapshot.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HaveValidSnapshot.swift; sourceTree = "<group>"; };
+		0E59E831D7B140CD2237F5F1 /* Quick.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Quick.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FC60F8E7B35788E49D71580 /* FBSnapshotTestController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestController.h; path = FBSnapshotTestCase/FBSnapshotTestController.h; sourceTree = "<group>"; };
+		1225851466E5039CCE0CBEA3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12902C1B06BE89564FD05975 /* QuickConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QuickConfiguration.m; path = Quick/Configuration/QuickConfiguration.m; sourceTree = "<group>"; };
+		15E5F7CE62732DD9CD101EB1 /* QuickSpec.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QuickSpec.m; path = Quick/QuickSpec.m; sourceTree = "<group>"; };
+		163AAAA76308150156ED76F5 /* Pods-EasyZoom_Tests-Nimble.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-EasyZoom_Tests-Nimble.modulemap"; sourceTree = "<group>"; };
+		17E8AF8C2C90A3F9113035C1 /* UIImage+Diff.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Diff.m"; path = "FBSnapshotTestCase/UIImage+Diff.m"; sourceTree = "<group>"; };
+		195E59638745D53DC1A59A24 /* Pods-EasyZoom_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EasyZoom_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		1A2333AD231DA9F55DBB9FF9 /* Pods-EasyZoom_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EasyZoom_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		1A7D7E9D0AEC6EC6E8A8C25C /* Pods-EasyZoom_Tests-EasyZoom-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-EasyZoom_Tests-EasyZoom-dummy.m"; path = "../Pods-EasyZoom_Tests-EasyZoom/Pods-EasyZoom_Tests-EasyZoom-dummy.m"; sourceTree = "<group>"; };
+		1ACADC7785507E1CF76926B8 /* FBSnapshotTestCase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCase.h; path = FBSnapshotTestCase/FBSnapshotTestCase.h; sourceTree = "<group>"; };
+		1B240BD8EA16A2D59C0835ED /* Pods-EasyZoom_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-EasyZoom_Tests-dummy.m"; sourceTree = "<group>"; };
+		1B38D164406A24C2EDB81D55 /* NMBExceptionCapture.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NMBExceptionCapture.h; path = Nimble/objc/NMBExceptionCapture.h; sourceTree = "<group>"; };
+		1C9AF5B3D111FDB29C5A14F9 /* Example.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Example.swift; path = Quick/Example.swift; sourceTree = "<group>"; };
+		1D62E0CF2B8EA36B82BCD3C8 /* Functional.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Functional.swift; path = Nimble/Utils/Functional.swift; sourceTree = "<group>"; };
+		1F80FF04F88B28AE26B359DD /* Pods-EasyZoom_Tests-EasyZoom.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; name = "Pods-EasyZoom_Tests-EasyZoom.modulemap"; path = "../Pods-EasyZoom_Tests-EasyZoom/Pods-EasyZoom_Tests-EasyZoom.modulemap"; sourceTree = "<group>"; };
+		219DCD1F446DBFCF21B9712B /* Pods-EasyZoom_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EasyZoom_Tests-resources.sh"; sourceTree = "<group>"; };
+		2352FDDE9F9223654B724DE3 /* BeEmpty.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeEmpty.swift; path = Nimble/Matchers/BeEmpty.swift; sourceTree = "<group>"; };
+		23E2A15B1FCED79B5717C1E9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24402193D9344C6621B24F5F /* Nimble.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Nimble.h; path = Nimble/Nimble.h; sourceTree = "<group>"; };
+		26AA55BF22C1AF6F563C4BCE /* Configuration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Configuration.swift; path = Quick/Configuration/Configuration.swift; sourceTree = "<group>"; };
+		2A2514721C52B93FEE1B2EFB /* BeIdenticalTo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeIdenticalTo.swift; path = Nimble/Matchers/BeIdenticalTo.swift; sourceTree = "<group>"; };
+		2ADDD4690892F7DAF60BB5F7 /* DSL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DSL.h; path = Nimble/objc/DSL.h; sourceTree = "<group>"; };
+		2AE0641BA738DA00AABCF76D /* AllPass.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AllPass.swift; path = Nimble/Matchers/AllPass.swift; sourceTree = "<group>"; };
+		2C39989D088B5F37B58BE9F9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30175EF3F2BE9CEA1FD1FE6D /* Pods-EasyZoom_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EasyZoom_Example-frameworks.sh"; sourceTree = "<group>"; };
+		34070596601C9ACFF5EED1DC /* Match.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Match.swift; path = Nimble/Matchers/Match.swift; sourceTree = "<group>"; };
+		3472D49F1596AA7549032240 /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		35472E960CA9C44147E5BD74 /* Pods-EasyZoom_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EasyZoom_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		38411CE8335DB9EE25886CFB /* EasyZoom.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EasyZoom.swift; sourceTree = "<group>"; };
+		3859A3F40DB58F6CFE95B3C7 /* Expression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Expression.swift; path = Nimble/Expression.swift; sourceTree = "<group>"; };
+		3920E3216F58DF740E5231AB /* Pods-EasyZoom_Tests-FBSnapshotTestCase.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EasyZoom_Tests-FBSnapshotTestCase.xcconfig"; sourceTree = "<group>"; };
+		3B81522CEC9F5019E2618B4F /* Pods_EasyZoom_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyZoom_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DAE3788CB6FBA5CC5058727 /* Pods-EasyZoom_Tests-EasyZoom-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-EasyZoom_Tests-EasyZoom-prefix.pch"; path = "../Pods-EasyZoom_Tests-EasyZoom/Pods-EasyZoom_Tests-EasyZoom-prefix.pch"; sourceTree = "<group>"; };
+		453E6598051DF8DE610C7CE2 /* ExampleGroup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExampleGroup.swift; path = Quick/ExampleGroup.swift; sourceTree = "<group>"; };
+		45ABCD56A56043A2CFECCCD6 /* Quick.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Quick.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		47D81F7A622707D169E99C43 /* Pods-EasyZoom_Tests-FBSnapshotTestCase-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-EasyZoom_Tests-FBSnapshotTestCase-prefix.pch"; sourceTree = "<group>"; };
+		4972E63DC384F65849AE31C1 /* QCKDSL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QCKDSL.h; path = Quick/DSL/QCKDSL.h; sourceTree = "<group>"; };
+		4A7B742E821EA6626C525CE1 /* FailureMessage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FailureMessage.swift; path = Nimble/FailureMessage.swift; sourceTree = "<group>"; };
+		4A95E7C7232B6571F36BA8FE /* BeGreaterThanOrEqualTo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeGreaterThanOrEqualTo.swift; path = Nimble/Matchers/BeGreaterThanOrEqualTo.swift; sourceTree = "<group>"; };
+		4DBB2C9E33DD89299AB6CE25 /* BeginWith.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeginWith.swift; path = Nimble/Matchers/BeginWith.swift; sourceTree = "<group>"; };
+		4FA146904AA6FD8A94C17542 /* SuiteHooks.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SuiteHooks.swift; path = Quick/Hooks/SuiteHooks.swift; sourceTree = "<group>"; };
+		510A98558859F3949E066967 /* Nimble_Snapshots.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Nimble_Snapshots.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		52A7F537F6D86744129DBA3D /* Pods-EasyZoom_Tests-Nimble-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-EasyZoom_Tests-Nimble-umbrella.h"; sourceTree = "<group>"; };
+		534E93619B639A9C617B3599 /* FBSnapshotTestController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestController.m; path = FBSnapshotTestCase/FBSnapshotTestController.m; sourceTree = "<group>"; };
+		53D526CF41572A378EEC6B3A /* FBSnapshotTestCasePlatform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCasePlatform.m; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.m; sourceTree = "<group>"; };
+		55304DE7DAFA2F4EC03D17D9 /* BeLessThan.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeLessThan.swift; path = Nimble/Matchers/BeLessThan.swift; sourceTree = "<group>"; };
+		587E9E79D7CE1F2561DC70EE /* Pods-EasyZoom_Tests-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-EasyZoom_Tests-environment.h"; sourceTree = "<group>"; };
+		5885BCB38A7195E8FFF92ACD /* UIImage+Diff.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Diff.h"; path = "FBSnapshotTestCase/UIImage+Diff.h"; sourceTree = "<group>"; };
+		5EA19A5BCCFCD964AFB3B5D7 /* Pods-EasyZoom_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-EasyZoom_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		60BE0251386DC53F3265E944 /* World.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = World.swift; path = Quick/World.swift; sourceTree = "<group>"; };
+		631755FC44A19117B8DA572A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../Pods-EasyZoom_Tests-EasyZoom/Info.plist"; sourceTree = "<group>"; };
+		64BA3F662E87FCDAE33EE757 /* Pods-EasyZoom_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-EasyZoom_Example-umbrella.h"; sourceTree = "<group>"; };
+		654ACBED0D9D345B712EB153 /* ExampleHooks.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExampleHooks.swift; path = Quick/Hooks/ExampleHooks.swift; sourceTree = "<group>"; };
+		67FBE047913551E7073C4428 /* EndWith.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EndWith.swift; path = Nimble/Matchers/EndWith.swift; sourceTree = "<group>"; };
+		6879E3E9F67947CC7E7AD1C5 /* Equal.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Equal.swift; path = Nimble/Matchers/Equal.swift; sourceTree = "<group>"; };
+		6A17290269C74E13CA0C05F8 /* Pods-EasyZoom_Tests-Nimble-Snapshots-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-EasyZoom_Tests-Nimble-Snapshots-umbrella.h"; sourceTree = "<group>"; };
+		6D2B0EE82773A13ECF2C6DFE /* NMBExceptionCapture.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NMBExceptionCapture.m; path = Nimble/objc/NMBExceptionCapture.m; sourceTree = "<group>"; };
+		6E4886EEC1928A7F289F499F /* Pods-EasyZoom_Example-EasyZoom-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EasyZoom_Example-EasyZoom-Private.xcconfig"; sourceTree = "<group>"; };
+		708FCE90A07A37B46A2E5EEC /* DSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DSL.swift; path = Quick/DSL/DSL.swift; sourceTree = "<group>"; };
+		71C1F4C401E9513ABC3D9EB9 /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		720BAB6CEB74C5F6A0BC9880 /* MatcherFunc.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MatcherFunc.swift; path = Nimble/Wrappers/MatcherFunc.swift; sourceTree = "<group>"; };
+		723A6C578A5DB0E939A519C6 /* UIImage+Compare.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Compare.h"; path = "FBSnapshotTestCase/UIImage+Compare.h"; sourceTree = "<group>"; };
+		7261A91717DD94E5EDF5E279 /* DSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DSL.swift; path = Nimble/DSL.swift; sourceTree = "<group>"; };
+		73B86E52FBC6A54910119EDA /* FBSnapshotTestCasePlatform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCasePlatform.h; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.h; sourceTree = "<group>"; };
+		74E7BA5ABDE8DE0C2340C076 /* FBSnapshotTestCase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCase.m; path = FBSnapshotTestCase/FBSnapshotTestCase.m; sourceTree = "<group>"; };
+		759CA615101799EDCDE628D3 /* Pods-EasyZoom_Tests-Nimble-Snapshots-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-EasyZoom_Tests-Nimble-Snapshots-dummy.m"; sourceTree = "<group>"; };
+		79E26B5FE76B63D9C0E6AAC3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BBD8045BE0B941967FADF3D /* Closures.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Closures.swift; path = Quick/Hooks/Closures.swift; sourceTree = "<group>"; };
+		7CA8615B894BDBD84B77D75B /* Pods-EasyZoom_Example-EasyZoom.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EasyZoom_Example-EasyZoom.xcconfig"; sourceTree = "<group>"; };
+		7DF8B31A4FFB378A449C3F90 /* Pods-EasyZoom_Tests-Quick-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EasyZoom_Tests-Quick-Private.xcconfig"; sourceTree = "<group>"; };
+		825B772A85B0A3488EFE4EF0 /* BeGreaterThan.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeGreaterThan.swift; path = Nimble/Matchers/BeGreaterThan.swift; sourceTree = "<group>"; };
+		87E3E0EAEB928C9A16E18615 /* ExampleMetadata.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExampleMetadata.swift; path = Quick/ExampleMetadata.swift; sourceTree = "<group>"; };
+		8A1E7702E20CFDB4CC8DA133 /* Pods-EasyZoom_Tests-Quick.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-EasyZoom_Tests-Quick.modulemap"; sourceTree = "<group>"; };
+		8CD8C2573C0D749537F841FA /* Filter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Filter.swift; path = Quick/Filter.swift; sourceTree = "<group>"; };
+		8EB9C879EE221D1DF137B0C6 /* Pods-EasyZoom_Tests-Nimble-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-EasyZoom_Tests-Nimble-dummy.m"; sourceTree = "<group>"; };
+		8F6928A99179185F303CB6D5 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		902A9E9047C4EEBD9090522E /* Stringers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Stringers.swift; path = Nimble/Utils/Stringers.swift; sourceTree = "<group>"; };
+		9127AD19133F7A242BC63798 /* PrettySyntax.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PrettySyntax.swift; sourceTree = "<group>"; };
+		91DE2158D02A1E94356D07F3 /* Pods-EasyZoom_Tests-Nimble-Snapshots-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-EasyZoom_Tests-Nimble-Snapshots-prefix.pch"; sourceTree = "<group>"; };
+		93FF0C06344C63653AFDB378 /* Pods-EasyZoom_Tests-FBSnapshotTestCase-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-EasyZoom_Tests-FBSnapshotTestCase-dummy.m"; sourceTree = "<group>"; };
+		959D443B5622F5FEFDCA64CE /* EasyZoom.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyZoom.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		9605072064F2E002F75B919C /* Pods-EasyZoom_Tests-Nimble-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-EasyZoom_Tests-Nimble-prefix.pch"; sourceTree = "<group>"; };
+		96D0BFE99BD9317AE8B7E952 /* Pods-EasyZoom_Tests-Quick-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-EasyZoom_Tests-Quick-dummy.m"; sourceTree = "<group>"; };
+		96D610D77BD92EFCD76E91D9 /* Pods-EasyZoom_Tests-FBSnapshotTestCase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-EasyZoom_Tests-FBSnapshotTestCase.modulemap"; sourceTree = "<group>"; };
+		9997872EBA8343804DD31B8C /* Pods-EasyZoom_Example-EasyZoom.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-EasyZoom_Example-EasyZoom.modulemap"; sourceTree = "<group>"; };
+		9A7D63AB0FE234EF0591B01B /* BasicMatcherWrapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BasicMatcherWrapper.swift; path = Nimble/Wrappers/BasicMatcherWrapper.swift; sourceTree = "<group>"; };
+		9AB4D2AD0F31FE375F0D7CCA /* DSL.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DSL.m; path = Nimble/objc/DSL.m; sourceTree = "<group>"; };
+		9B45739CF7B6043AAA3801A2 /* BeAnInstanceOf.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeAnInstanceOf.swift; path = Nimble/Matchers/BeAnInstanceOf.swift; sourceTree = "<group>"; };
+		9D85D994F1D01CE382BBFB7F /* Pods-EasyZoom_Tests-EasyZoom-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyZoom_Tests-EasyZoom-Private.xcconfig"; path = "../Pods-EasyZoom_Tests-EasyZoom/Pods-EasyZoom_Tests-EasyZoom-Private.xcconfig"; sourceTree = "<group>"; };
+		9FCBBD7EAA488244A89EAED1 /* Pods_EasyZoom_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyZoom_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A23B635EA69AC78305D4F4DF /* Quick.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Quick.h; path = Quick/Quick.h; sourceTree = "<group>"; };
+		A2D3AD0C5D29AF9FD6C04203 /* BeLogical.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeLogical.swift; path = Nimble/Matchers/BeLogical.swift; sourceTree = "<group>"; };
+		A371A556923ADF29D726A6DE /* UIImage+Compare.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Compare.m"; path = "FBSnapshotTestCase/UIImage+Compare.m"; sourceTree = "<group>"; };
+		A499ABC11A62AFAACA327BDC /* Pods-EasyZoom_Tests-Nimble.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EasyZoom_Tests-Nimble.xcconfig"; sourceTree = "<group>"; };
+		A4BB3A3ABE849531625411FB /* ObjCMatcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ObjCMatcher.swift; path = Nimble/Wrappers/ObjCMatcher.swift; sourceTree = "<group>"; };
+		A525324906454C76D73F7DA7 /* BeAKindOf.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeAKindOf.swift; path = Nimble/Matchers/BeAKindOf.swift; sourceTree = "<group>"; };
+		A886B7B9B1179ABE048FEC39 /* Pods-EasyZoom_Example-EasyZoom-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-EasyZoom_Example-EasyZoom-prefix.pch"; sourceTree = "<group>"; };
+		A8D1330C14B79DB142E3D9B9 /* Pods-EasyZoom_Example-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-EasyZoom_Example-environment.h"; sourceTree = "<group>"; };
+		AAB3F5414AD777A72D932F8D /* AsyncMatcherWrapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AsyncMatcherWrapper.swift; path = Nimble/Wrappers/AsyncMatcherWrapper.swift; sourceTree = "<group>"; };
+		AB8E325782659EAB36AC21A2 /* Pods-EasyZoom_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-EasyZoom_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		ACD0C1E71C3A6DE5CF5CEDC6 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		AD2322F43DE366D265933301 /* QuickSpec.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QuickSpec.h; path = Quick/QuickSpec.h; sourceTree = "<group>"; };
+		B7B8DCF8A3671868A26D414C /* Pods-EasyZoom_Tests-EasyZoom.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyZoom_Tests-EasyZoom.xcconfig"; path = "../Pods-EasyZoom_Tests-EasyZoom/Pods-EasyZoom_Tests-EasyZoom.xcconfig"; sourceTree = "<group>"; };
+		B8325EEBDA7ECC6801B7D8A9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC9645B5804621492921DB42 /* Pods-EasyZoom_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-EasyZoom_Example-dummy.m"; sourceTree = "<group>"; };
+		BCA7B805608E229B5560D867 /* QCKDSL.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QCKDSL.m; path = Quick/DSL/QCKDSL.m; sourceTree = "<group>"; };
+		BE00A10D3FDAC560896CD906 /* NSString+QCKSelectorName.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+QCKSelectorName.m"; path = "Quick/NSString+QCKSelectorName.m"; sourceTree = "<group>"; };
+		C0CFD0EAC3446E44ECEE19F5 /* Pods-EasyZoom_Tests-Nimble-Snapshots.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EasyZoom_Tests-Nimble-Snapshots.xcconfig"; sourceTree = "<group>"; };
+		C13830442C885BDEFD240368 /* BeNil.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeNil.swift; path = Nimble/Matchers/BeNil.swift; sourceTree = "<group>"; };
+		C54C3E5113B4338A81BB0CE8 /* RaisesException.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RaisesException.swift; path = Nimble/Matchers/RaisesException.swift; sourceTree = "<group>"; };
+		C6A74E41F7A9A2DF24CA137D /* Pods-EasyZoom_Tests-Quick-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-EasyZoom_Tests-Quick-umbrella.h"; sourceTree = "<group>"; };
+		C78DCEB326CABAD758EEC177 /* Pods-EasyZoom_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-EasyZoom_Tests-umbrella.h"; sourceTree = "<group>"; };
+		C7E11617F76F0A8A2DCE8807 /* Poll.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Poll.swift; path = Nimble/Utils/Poll.swift; sourceTree = "<group>"; };
+		CA5CFEA20E42A1714EEBE2A7 /* EasyZoom.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyZoom.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC17E9CA9E4A4EFA9BD26A89 /* DSL+Wait.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DSL+Wait.swift"; path = "Nimble/DSL+Wait.swift"; sourceTree = "<group>"; };
+		CC41A77A486624147FEE4042 /* Pods-EasyZoom_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EasyZoom_Example.release.xcconfig"; sourceTree = "<group>"; };
+		CCB14BAF38F6CB21EEACD4C9 /* Pods-EasyZoom_Tests-Nimble-Snapshots.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-EasyZoom_Tests-Nimble-Snapshots.modulemap"; sourceTree = "<group>"; };
+		CCC0F6F5C54CA690998C78FD /* Pods-EasyZoom_Example-EasyZoom-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-EasyZoom_Example-EasyZoom-dummy.m"; sourceTree = "<group>"; };
+		CD96F289B1E1743FB35183E8 /* Pods-EasyZoom_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EasyZoom_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		CEBA997A46E440EAC5C9AB04 /* Pods-EasyZoom_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-EasyZoom_Tests.modulemap"; sourceTree = "<group>"; };
+		D05BD7D34EC642E43699571D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2560F00DE79F4C87C90F9D3 /* AdapterProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AdapterProtocols.swift; path = Nimble/Adapters/AdapterProtocols.swift; sourceTree = "<group>"; };
+		D337B2C7B4294DA9A614C14B /* EasyZoom.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EasyZoom.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3F5C47B4F01EDA7A2337DD6 /* NimbleXCTestHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NimbleXCTestHandler.swift; path = Nimble/Adapters/NimbleXCTestHandler.swift; sourceTree = "<group>"; };
+		D519FDE13E94C87C1AEAF13A /* Expectation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Expectation.swift; path = Nimble/Expectation.swift; sourceTree = "<group>"; };
+		D8D5A376114C31A6B9608508 /* Pods-EasyZoom_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EasyZoom_Example-resources.sh"; sourceTree = "<group>"; };
+		DD798724643B8C9CAEB84DD6 /* MatcherProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MatcherProtocols.swift; path = Nimble/Matchers/MatcherProtocols.swift; sourceTree = "<group>"; };
+		DDBB670277E476C4296949AB /* BeLessThanOrEqual.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeLessThanOrEqual.swift; path = Nimble/Matchers/BeLessThanOrEqual.swift; sourceTree = "<group>"; };
+		DDEB960160E5E2DFF2482D2C /* Pods-EasyZoom_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-EasyZoom_Example.modulemap"; sourceTree = "<group>"; };
+		DF247209195FC20FF2C85AD5 /* FullMatcherWrapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FullMatcherWrapper.swift; path = Nimble/Wrappers/FullMatcherWrapper.swift; sourceTree = "<group>"; };
+		DF751CC0C9DE78F2EAAAF796 /* Pods-EasyZoom_Tests-Nimble-Snapshots-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EasyZoom_Tests-Nimble-Snapshots-Private.xcconfig"; sourceTree = "<group>"; };
+		E0BD8C052DB6BB93335E887A /* Pods-EasyZoom_Tests-EasyZoom-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-EasyZoom_Tests-EasyZoom-umbrella.h"; path = "../Pods-EasyZoom_Tests-EasyZoom/Pods-EasyZoom_Tests-EasyZoom-umbrella.h"; sourceTree = "<group>"; };
+		E27226EDCAE2489432389AE2 /* Pods-EasyZoom_Example-EasyZoom-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-EasyZoom_Example-EasyZoom-umbrella.h"; sourceTree = "<group>"; };
+		E2B97B7E3D6B65BC34281A7A /* AssertionRecorder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AssertionRecorder.swift; path = Nimble/Adapters/AssertionRecorder.swift; sourceTree = "<group>"; };
+		E30E4143BC6BF77CE92687C6 /* Nimble.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Nimble.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E389BBCEC3E7EAE79A4F7371 /* Contain.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Contain.swift; path = Nimble/Matchers/Contain.swift; sourceTree = "<group>"; };
+		E5D2BA19176B1785A836E48A /* Pods-EasyZoom_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EasyZoom_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		EA525E6FE637268C20BE8F5E /* Pods-EasyZoom_Tests-Quick.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EasyZoom_Tests-Quick.xcconfig"; sourceTree = "<group>"; };
+		EB61ABBFE636131278580457 /* Callsite.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Callsite.swift; path = Quick/Callsite.swift; sourceTree = "<group>"; };
+		ED1DF20B403192FEB3CF631C /* EasyZoom.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EasyZoom.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEACFB7C62CE7FFFC3A9F34D /* QuickConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QuickConfiguration.h; path = Quick/Configuration/QuickConfiguration.h; sourceTree = "<group>"; };
+		EEF698347938BEDFC5BF5A93 /* World+DSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "World+DSL.swift"; path = "Quick/DSL/World+DSL.swift"; sourceTree = "<group>"; };
+		F55D36D4C3A4A0E53B54AA49 /* Pods-EasyZoom_Tests-Nimble-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EasyZoom_Tests-Nimble-Private.xcconfig"; sourceTree = "<group>"; };
+		F6ADD448A54327BBDD85D7BE /* BeCloseTo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeCloseTo.swift; path = Nimble/Matchers/BeCloseTo.swift; sourceTree = "<group>"; };
+		F98D661BD5BBB86AAC402B47 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		F9CCA2E11E7860FC051C073C /* NSString+QCKSelectorName.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+QCKSelectorName.h"; path = "Quick/NSString+QCKSelectorName.h"; sourceTree = "<group>"; };
+		F9FC7CA10EF7E19D062F33B9 /* Pods-EasyZoom_Tests-Quick-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-EasyZoom_Tests-Quick-prefix.pch"; sourceTree = "<group>"; };
+		FB7BA08630F9FB7C8737A07E /* Pods-EasyZoom_Tests-FBSnapshotTestCase-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-EasyZoom_Tests-FBSnapshotTestCase-umbrella.h"; sourceTree = "<group>"; };
+		FBEEF32453BE542325C1072B /* Pods-EasyZoom_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EasyZoom_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		FCAA55BE963E5668D955C27B /* Nimble.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Nimble.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD97BA1FE51BC2A4D2C2FE38 /* NonNilMatcherWrapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NonNilMatcherWrapper.swift; path = Nimble/Wrappers/NonNilMatcherWrapper.swift; sourceTree = "<group>"; };
+		FEFA6A91546FE04706ABB092 /* Pods-EasyZoom_Tests-FBSnapshotTestCase-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EasyZoom_Tests-FBSnapshotTestCase-Private.xcconfig"; sourceTree = "<group>"; };
+		FF7B64F03F1BD78FFCFF9AB2 /* Failure.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Failure.swift; path = Quick/Failure.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2314BCD691E27D674F469079 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3D7F638C9D36FEEB83CB207 /* Foundation.framework in Frameworks */,
+				962E05C3AC0C2DBA747282F9 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		318A5EDDBE5BFA755DD6EF3D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				997C25D1D73E0F064DC9D6B8 /* FBSnapshotTestCase.framework in Frameworks */,
+				0BE5DE29AA29C381BF3A4376 /* Foundation.framework in Frameworks */,
+				554F15602A3AD610EF173786 /* Nimble.framework in Frameworks */,
+				085F73CDE75689D56C49D22D /* Quick.framework in Frameworks */,
+				2856B076C74AC010CA9FFA0D /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38CFCF0B9EEA5E5F2A9435BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F9BE725CE6669BF50E6008E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1517E6A0A46B30138A5F18E9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A90D20800505713E31C8059 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AF3769F1A93D3AC392A8889 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81670263081029AA5B94B83B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD51431A86287FB55FC621DF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A26058E8C89445812689EE46 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C82318063E3CAE0DD198111F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60DB839BD09DA7B9B64AA07E /* Foundation.framework in Frameworks */,
+				E3858A5993CE70956EF54C6E /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3E61C963FBE28FD7AA04977 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02A65280343D7380DAA25710 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA43BD9AC85245091E56789A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50D572059B66AA91303F2E26 /* Foundation.framework in Frameworks */,
+				8FF5C564B8A1CD6D5D3B95F8 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0027D4178D9F64BAFD7FAAD8 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F9B34ACCFFD4F55B26112229 /* EasyZoom */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		11DDF6F22A6D672B82D01A84 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2C39989D088B5F37B58BE9F9 /* Info.plist */,
+				631755FC44A19117B8DA572A /* Info.plist */,
+				9997872EBA8343804DD31B8C /* Pods-EasyZoom_Example-EasyZoom.modulemap */,
+				7CA8615B894BDBD84B77D75B /* Pods-EasyZoom_Example-EasyZoom.xcconfig */,
+				6E4886EEC1928A7F289F499F /* Pods-EasyZoom_Example-EasyZoom-Private.xcconfig */,
+				CCC0F6F5C54CA690998C78FD /* Pods-EasyZoom_Example-EasyZoom-dummy.m */,
+				A886B7B9B1179ABE048FEC39 /* Pods-EasyZoom_Example-EasyZoom-prefix.pch */,
+				E27226EDCAE2489432389AE2 /* Pods-EasyZoom_Example-EasyZoom-umbrella.h */,
+				1F80FF04F88B28AE26B359DD /* Pods-EasyZoom_Tests-EasyZoom.modulemap */,
+				B7B8DCF8A3671868A26D414C /* Pods-EasyZoom_Tests-EasyZoom.xcconfig */,
+				9D85D994F1D01CE382BBFB7F /* Pods-EasyZoom_Tests-EasyZoom-Private.xcconfig */,
+				1A7D7E9D0AEC6EC6E8A8C25C /* Pods-EasyZoom_Tests-EasyZoom-dummy.m */,
+				3DAE3788CB6FBA5CC5058727 /* Pods-EasyZoom_Tests-EasyZoom-prefix.pch */,
+				E0BD8C052DB6BB93335E887A /* Pods-EasyZoom_Tests-EasyZoom-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/Pods-EasyZoom_Example-EasyZoom";
+			sourceTree = "<group>";
+		};
+		147D406AC9D8971C1E0771A4 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1225851466E5039CCE0CBEA3 /* Info.plist */,
+				96D610D77BD92EFCD76E91D9 /* Pods-EasyZoom_Tests-FBSnapshotTestCase.modulemap */,
+				3920E3216F58DF740E5231AB /* Pods-EasyZoom_Tests-FBSnapshotTestCase.xcconfig */,
+				FEFA6A91546FE04706ABB092 /* Pods-EasyZoom_Tests-FBSnapshotTestCase-Private.xcconfig */,
+				93FF0C06344C63653AFDB378 /* Pods-EasyZoom_Tests-FBSnapshotTestCase-dummy.m */,
+				47D81F7A622707D169E99C43 /* Pods-EasyZoom_Tests-FBSnapshotTestCase-prefix.pch */,
+				FB7BA08630F9FB7C8737A07E /* Pods-EasyZoom_Tests-FBSnapshotTestCase-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-EasyZoom_Tests-FBSnapshotTestCase";
+			sourceTree = "<group>";
+		};
+		244698D1662BA898A9C9A847 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B8325EEBDA7ECC6801B7D8A9 /* Info.plist */,
+				CCB14BAF38F6CB21EEACD4C9 /* Pods-EasyZoom_Tests-Nimble-Snapshots.modulemap */,
+				C0CFD0EAC3446E44ECEE19F5 /* Pods-EasyZoom_Tests-Nimble-Snapshots.xcconfig */,
+				DF751CC0C9DE78F2EAAAF796 /* Pods-EasyZoom_Tests-Nimble-Snapshots-Private.xcconfig */,
+				759CA615101799EDCDE628D3 /* Pods-EasyZoom_Tests-Nimble-Snapshots-dummy.m */,
+				91DE2158D02A1E94356D07F3 /* Pods-EasyZoom_Tests-Nimble-Snapshots-prefix.pch */,
+				6A17290269C74E13CA0C05F8 /* Pods-EasyZoom_Tests-Nimble-Snapshots-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-EasyZoom_Tests-Nimble-Snapshots";
+			sourceTree = "<group>";
+		};
+		3B4EDBAD329E94774B49003A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D05BD7D34EC642E43699571D /* Info.plist */,
+				163AAAA76308150156ED76F5 /* Pods-EasyZoom_Tests-Nimble.modulemap */,
+				A499ABC11A62AFAACA327BDC /* Pods-EasyZoom_Tests-Nimble.xcconfig */,
+				F55D36D4C3A4A0E53B54AA49 /* Pods-EasyZoom_Tests-Nimble-Private.xcconfig */,
+				8EB9C879EE221D1DF137B0C6 /* Pods-EasyZoom_Tests-Nimble-dummy.m */,
+				9605072064F2E002F75B919C /* Pods-EasyZoom_Tests-Nimble-prefix.pch */,
+				52A7F537F6D86744129DBA3D /* Pods-EasyZoom_Tests-Nimble-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-EasyZoom_Tests-Nimble";
+			sourceTree = "<group>";
+		};
+		494BAD4D0CEC09D7D8BEE4F9 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				79E26B5FE76B63D9C0E6AAC3 /* Info.plist */,
+				8A1E7702E20CFDB4CC8DA133 /* Pods-EasyZoom_Tests-Quick.modulemap */,
+				EA525E6FE637268C20BE8F5E /* Pods-EasyZoom_Tests-Quick.xcconfig */,
+				7DF8B31A4FFB378A449C3F90 /* Pods-EasyZoom_Tests-Quick-Private.xcconfig */,
+				96D0BFE99BD9317AE8B7E952 /* Pods-EasyZoom_Tests-Quick-dummy.m */,
+				F9FC7CA10EF7E19D062F33B9 /* Pods-EasyZoom_Tests-Quick-prefix.pch */,
+				C6A74E41F7A9A2DF24CA137D /* Pods-EasyZoom_Tests-Quick-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-EasyZoom_Tests-Quick";
+			sourceTree = "<group>";
+		};
+		505EDB3E0E7E4A976E720535 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				7946A15D6D45A96F3D5309DE /* Classes */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+		7946A15D6D45A96F3D5309DE /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				38411CE8335DB9EE25886CFB /* EasyZoom.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		8293A90CDEB96110DEF5A579 /* Pods-EasyZoom_Example */ = {
+			isa = PBXGroup;
+			children = (
+				02CE1C573DF041310E3E7C35 /* Info.plist */,
+				DDEB960160E5E2DFF2482D2C /* Pods-EasyZoom_Example.modulemap */,
+				5EA19A5BCCFCD964AFB3B5D7 /* Pods-EasyZoom_Example-acknowledgements.markdown */,
+				FBEEF32453BE542325C1072B /* Pods-EasyZoom_Example-acknowledgements.plist */,
+				BC9645B5804621492921DB42 /* Pods-EasyZoom_Example-dummy.m */,
+				A8D1330C14B79DB142E3D9B9 /* Pods-EasyZoom_Example-environment.h */,
+				30175EF3F2BE9CEA1FD1FE6D /* Pods-EasyZoom_Example-frameworks.sh */,
+				D8D5A376114C31A6B9608508 /* Pods-EasyZoom_Example-resources.sh */,
+				64BA3F662E87FCDAE33EE757 /* Pods-EasyZoom_Example-umbrella.h */,
+				195E59638745D53DC1A59A24 /* Pods-EasyZoom_Example.debug.xcconfig */,
+				CC41A77A486624147FEE4042 /* Pods-EasyZoom_Example.release.xcconfig */,
+			);
+			name = "Pods-EasyZoom_Example";
+			path = "Target Support Files/Pods-EasyZoom_Example";
+			sourceTree = "<group>";
+		};
+		82D78499388347F031A61B8E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CA5CFEA20E42A1714EEBE2A7 /* EasyZoom.bundle */,
+				959D443B5622F5FEFDCA64CE /* EasyZoom.bundle */,
+				D337B2C7B4294DA9A614C14B /* EasyZoom.framework */,
+				ED1DF20B403192FEB3CF631C /* EasyZoom.framework */,
+				71C1F4C401E9513ABC3D9EB9 /* FBSnapshotTestCase.framework */,
+				FCAA55BE963E5668D955C27B /* Nimble.framework */,
+				510A98558859F3949E066967 /* Nimble_Snapshots.framework */,
+				9FCBBD7EAA488244A89EAED1 /* Pods_EasyZoom_Example.framework */,
+				3B81522CEC9F5019E2618B4F /* Pods_EasyZoom_Tests.framework */,
+				0E59E831D7B140CD2237F5F1 /* Quick.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		90CE67390D6D67848AAE7562 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3472D49F1596AA7549032240 /* FBSnapshotTestCase.framework */,
+				E30E4143BC6BF77CE92687C6 /* Nimble.framework */,
+				45ABCD56A56043A2CFECCCD6 /* Quick.framework */,
+				D6F0B778C3649F8A1C5AAD72 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		913B12C48856E655DF5CE478 /* Pods-EasyZoom_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				23E2A15B1FCED79B5717C1E9 /* Info.plist */,
+				CEBA997A46E440EAC5C9AB04 /* Pods-EasyZoom_Tests.modulemap */,
+				AB8E325782659EAB36AC21A2 /* Pods-EasyZoom_Tests-acknowledgements.markdown */,
+				1A2333AD231DA9F55DBB9FF9 /* Pods-EasyZoom_Tests-acknowledgements.plist */,
+				1B240BD8EA16A2D59C0835ED /* Pods-EasyZoom_Tests-dummy.m */,
+				587E9E79D7CE1F2561DC70EE /* Pods-EasyZoom_Tests-environment.h */,
+				E5D2BA19176B1785A836E48A /* Pods-EasyZoom_Tests-frameworks.sh */,
+				219DCD1F446DBFCF21B9712B /* Pods-EasyZoom_Tests-resources.sh */,
+				C78DCEB326CABAD758EEC177 /* Pods-EasyZoom_Tests-umbrella.h */,
+				CD96F289B1E1743FB35183E8 /* Pods-EasyZoom_Tests.debug.xcconfig */,
+				35472E960CA9C44147E5BD74 /* Pods-EasyZoom_Tests.release.xcconfig */,
+			);
+			name = "Pods-EasyZoom_Tests";
+			path = "Target Support Files/Pods-EasyZoom_Tests";
+			sourceTree = "<group>";
+		};
+		9AAC80FF98055421AB6197AA /* Nimble-Snapshots */ = {
+			isa = PBXGroup;
+			children = (
+				0C9ADEE3B190F3BC2038F149 /* HaveValidSnapshot.swift */,
+				9127AD19133F7A242BC63798 /* PrettySyntax.swift */,
+				244698D1662BA898A9C9A847 /* Support Files */,
+			);
+			path = "Nimble-Snapshots";
+			sourceTree = "<group>";
+		};
+		9DCE386B5B58D4C3A6F117E6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ECFA561009D386688003BE31 /* FBSnapshotTestCase */,
+				D69DA6E52E399A1BF1AB2818 /* Nimble */,
+				9AAC80FF98055421AB6197AA /* Nimble-Snapshots */,
+				E3BBB83B5AA0D04E7DE4C475 /* Quick */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D23E547192DE80D917CD12DC = {
+			isa = PBXGroup;
+			children = (
+				8F6928A99179185F303CB6D5 /* Podfile */,
+				0027D4178D9F64BAFD7FAAD8 /* Development Pods */,
+				90CE67390D6D67848AAE7562 /* Frameworks */,
+				9DCE386B5B58D4C3A6F117E6 /* Pods */,
+				82D78499388347F031A61B8E /* Products */,
+				E6214D51245230CB26CC075E /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D69DA6E52E399A1BF1AB2818 /* Nimble */ = {
+			isa = PBXGroup;
+			children = (
+				D2560F00DE79F4C87C90F9D3 /* AdapterProtocols.swift */,
+				2AE0641BA738DA00AABCF76D /* AllPass.swift */,
+				E2B97B7E3D6B65BC34281A7A /* AssertionRecorder.swift */,
+				AAB3F5414AD777A72D932F8D /* AsyncMatcherWrapper.swift */,
+				9A7D63AB0FE234EF0591B01B /* BasicMatcherWrapper.swift */,
+				A525324906454C76D73F7DA7 /* BeAKindOf.swift */,
+				9B45739CF7B6043AAA3801A2 /* BeAnInstanceOf.swift */,
+				F6ADD448A54327BBDD85D7BE /* BeCloseTo.swift */,
+				2352FDDE9F9223654B724DE3 /* BeEmpty.swift */,
+				825B772A85B0A3488EFE4EF0 /* BeGreaterThan.swift */,
+				4A95E7C7232B6571F36BA8FE /* BeGreaterThanOrEqualTo.swift */,
+				2A2514721C52B93FEE1B2EFB /* BeIdenticalTo.swift */,
+				55304DE7DAFA2F4EC03D17D9 /* BeLessThan.swift */,
+				DDBB670277E476C4296949AB /* BeLessThanOrEqual.swift */,
+				A2D3AD0C5D29AF9FD6C04203 /* BeLogical.swift */,
+				C13830442C885BDEFD240368 /* BeNil.swift */,
+				4DBB2C9E33DD89299AB6CE25 /* BeginWith.swift */,
+				E389BBCEC3E7EAE79A4F7371 /* Contain.swift */,
+				2ADDD4690892F7DAF60BB5F7 /* DSL.h */,
+				9AB4D2AD0F31FE375F0D7CCA /* DSL.m */,
+				7261A91717DD94E5EDF5E279 /* DSL.swift */,
+				CC17E9CA9E4A4EFA9BD26A89 /* DSL+Wait.swift */,
+				67FBE047913551E7073C4428 /* EndWith.swift */,
+				6879E3E9F67947CC7E7AD1C5 /* Equal.swift */,
+				D519FDE13E94C87C1AEAF13A /* Expectation.swift */,
+				3859A3F40DB58F6CFE95B3C7 /* Expression.swift */,
+				4A7B742E821EA6626C525CE1 /* FailureMessage.swift */,
+				DF247209195FC20FF2C85AD5 /* FullMatcherWrapper.swift */,
+				1D62E0CF2B8EA36B82BCD3C8 /* Functional.swift */,
+				34070596601C9ACFF5EED1DC /* Match.swift */,
+				720BAB6CEB74C5F6A0BC9880 /* MatcherFunc.swift */,
+				DD798724643B8C9CAEB84DD6 /* MatcherProtocols.swift */,
+				1B38D164406A24C2EDB81D55 /* NMBExceptionCapture.h */,
+				6D2B0EE82773A13ECF2C6DFE /* NMBExceptionCapture.m */,
+				24402193D9344C6621B24F5F /* Nimble.h */,
+				D3F5C47B4F01EDA7A2337DD6 /* NimbleXCTestHandler.swift */,
+				FD97BA1FE51BC2A4D2C2FE38 /* NonNilMatcherWrapper.swift */,
+				A4BB3A3ABE849531625411FB /* ObjCMatcher.swift */,
+				C7E11617F76F0A8A2DCE8807 /* Poll.swift */,
+				C54C3E5113B4338A81BB0CE8 /* RaisesException.swift */,
+				09C033A4B606A6BD642B2D8B /* SourceLocation.swift */,
+				902A9E9047C4EEBD9090522E /* Stringers.swift */,
+				3B4EDBAD329E94774B49003A /* Support Files */,
+			);
+			path = Nimble;
+			sourceTree = "<group>";
+		};
+		D6F0B778C3649F8A1C5AAD72 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				F98D661BD5BBB86AAC402B47 /* Foundation.framework */,
+				ACD0C1E71C3A6DE5CF5CEDC6 /* XCTest.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		E3BBB83B5AA0D04E7DE4C475 /* Quick */ = {
+			isa = PBXGroup;
+			children = (
+				EB61ABBFE636131278580457 /* Callsite.swift */,
+				7BBD8045BE0B941967FADF3D /* Closures.swift */,
+				26AA55BF22C1AF6F563C4BCE /* Configuration.swift */,
+				708FCE90A07A37B46A2E5EEC /* DSL.swift */,
+				1C9AF5B3D111FDB29C5A14F9 /* Example.swift */,
+				453E6598051DF8DE610C7CE2 /* ExampleGroup.swift */,
+				654ACBED0D9D345B712EB153 /* ExampleHooks.swift */,
+				87E3E0EAEB928C9A16E18615 /* ExampleMetadata.swift */,
+				FF7B64F03F1BD78FFCFF9AB2 /* Failure.swift */,
+				8CD8C2573C0D749537F841FA /* Filter.swift */,
+				F9CCA2E11E7860FC051C073C /* NSString+QCKSelectorName.h */,
+				BE00A10D3FDAC560896CD906 /* NSString+QCKSelectorName.m */,
+				4972E63DC384F65849AE31C1 /* QCKDSL.h */,
+				BCA7B805608E229B5560D867 /* QCKDSL.m */,
+				A23B635EA69AC78305D4F4DF /* Quick.h */,
+				EEACFB7C62CE7FFFC3A9F34D /* QuickConfiguration.h */,
+				12902C1B06BE89564FD05975 /* QuickConfiguration.m */,
+				AD2322F43DE366D265933301 /* QuickSpec.h */,
+				15E5F7CE62732DD9CD101EB1 /* QuickSpec.m */,
+				4FA146904AA6FD8A94C17542 /* SuiteHooks.swift */,
+				60BE0251386DC53F3265E944 /* World.swift */,
+				EEF698347938BEDFC5BF5A93 /* World+DSL.swift */,
+				494BAD4D0CEC09D7D8BEE4F9 /* Support Files */,
+			);
+			path = Quick;
+			sourceTree = "<group>";
+		};
+		E6214D51245230CB26CC075E /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8293A90CDEB96110DEF5A579 /* Pods-EasyZoom_Example */,
+				913B12C48856E655DF5CE478 /* Pods-EasyZoom_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		ECFA561009D386688003BE31 /* FBSnapshotTestCase */ = {
+			isa = PBXGroup;
+			children = (
+				1ACADC7785507E1CF76926B8 /* FBSnapshotTestCase.h */,
+				74E7BA5ABDE8DE0C2340C076 /* FBSnapshotTestCase.m */,
+				73B86E52FBC6A54910119EDA /* FBSnapshotTestCasePlatform.h */,
+				53D526CF41572A378EEC6B3A /* FBSnapshotTestCasePlatform.m */,
+				0FC60F8E7B35788E49D71580 /* FBSnapshotTestController.h */,
+				534E93619B639A9C617B3599 /* FBSnapshotTestController.m */,
+				723A6C578A5DB0E939A519C6 /* UIImage+Compare.h */,
+				A371A556923ADF29D726A6DE /* UIImage+Compare.m */,
+				5885BCB38A7195E8FFF92ACD /* UIImage+Diff.h */,
+				17E8AF8C2C90A3F9113035C1 /* UIImage+Diff.m */,
+				147D406AC9D8971C1E0771A4 /* Support Files */,
+			);
+			path = FBSnapshotTestCase;
+			sourceTree = "<group>";
+		};
+		F9B34ACCFFD4F55B26112229 /* EasyZoom */ = {
+			isa = PBXGroup;
+			children = (
+				505EDB3E0E7E4A976E720535 /* Pod */,
+				11DDF6F22A6D672B82D01A84 /* Support Files */,
+			);
+			name = EasyZoom;
+			path = "/Users/yusuf/Developer/Creating Pods/EasyZoom";
+			sourceTree = "<absolute>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1952132C50EFDFA40A969812 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12A3493D0B12CA5DF802ECF1 /* Pods-EasyZoom_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		679D3192DA0C180055556543 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF1ECEB9F7197A4CFD22CB7E /* Pods-EasyZoom_Tests-Nimble-Snapshots-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D60EF8E71B6C674A884E179 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26E80C7FC0AAAB8643D8281C /* Pods-EasyZoom_Tests-EasyZoom-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BF41760D8A3EAB5DBEBA8D0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30050C3EB870C92B562C018F /* DSL.h in Headers */,
+				9A4AF5AA52E711A9D369E8C8 /* NMBExceptionCapture.h in Headers */,
+				DDEE05831DB3421DFF75EF70 /* Nimble.h in Headers */,
+				DAB632F710C935CCE2F5DA03 /* Pods-EasyZoom_Tests-Nimble-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83AAF4435381C4DD6A44567F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				604A12A01C934EA2BA076112 /* Pods-EasyZoom_Example-EasyZoom-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91B6BE2EB477ECA20B791B10 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				037A5D17FE37217C4AB04C8A /* NSString+QCKSelectorName.h in Headers */,
+				72ABB96B0A9011EA67D4CBFB /* Pods-EasyZoom_Tests-Quick-umbrella.h in Headers */,
+				4DC012E2DF6C9402716F08BB /* QCKDSL.h in Headers */,
+				7F821E7EF86365BB16DC0C49 /* Quick.h in Headers */,
+				73D3C418DD18F6663459B448 /* QuickConfiguration.h in Headers */,
+				422FB0B3D679C35AF48EEA63 /* QuickSpec.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C31C79D0BEEE220DE085020C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E9AD5817B26E7E34A2AB69E /* Pods-EasyZoom_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D04C4F8BAC3F7AFBCA23A049 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F334121BEFF584238F2B9E5A /* FBSnapshotTestCase.h in Headers */,
+				88193CAA4E7C1C1AA2F6F93F /* FBSnapshotTestCasePlatform.h in Headers */,
+				A270C2365171185629E211B2 /* FBSnapshotTestController.h in Headers */,
+				A66D468EA930B0867F9C8AE8 /* Pods-EasyZoom_Tests-FBSnapshotTestCase-umbrella.h in Headers */,
+				199313CC6CADDB0158E9D36C /* UIImage+Compare.h in Headers */,
+				DC9A918E9DCDFBF690B02933 /* UIImage+Diff.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3CF663156049DC08BF427ED2 /* Pods-EasyZoom_Tests-EasyZoom */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A3AE25FA0401A1BFF600511 /* Build configuration list for PBXNativeTarget "Pods-EasyZoom_Tests-EasyZoom" */;
+			buildPhases = (
+				C10D010052DF5E7C7B6E338F /* Sources */,
+				81670263081029AA5B94B83B /* Frameworks */,
+				FAA3C4128C841039AE06E64A /* Resources */,
+				6D60EF8E71B6C674A884E179 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E14AFF94AA6E164FA548FB5B /* PBXTargetDependency */,
+			);
+			name = "Pods-EasyZoom_Tests-EasyZoom";
+			productName = "Pods-EasyZoom_Tests-EasyZoom";
+			productReference = D337B2C7B4294DA9A614C14B /* EasyZoom.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		65C9AB9F613288D9668075A6 /* Pods-EasyZoom_Tests-FBSnapshotTestCase */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 89E2856CEFDC4E32BC2D806A /* Build configuration list for PBXNativeTarget "Pods-EasyZoom_Tests-FBSnapshotTestCase" */;
+			buildPhases = (
+				1F88387DF6FAF2934E317682 /* Sources */,
+				C82318063E3CAE0DD198111F /* Frameworks */,
+				D04C4F8BAC3F7AFBCA23A049 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-EasyZoom_Tests-FBSnapshotTestCase";
+			productName = "Pods-EasyZoom_Tests-FBSnapshotTestCase";
+			productReference = 71C1F4C401E9513ABC3D9EB9 /* FBSnapshotTestCase.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7359EE6E3467A42ADB1F2A5F /* Pods-EasyZoom_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F35DFE9D22FF68401916E8F /* Build configuration list for PBXNativeTarget "Pods-EasyZoom_Example" */;
+			buildPhases = (
+				7829E260BF82BEF19B433B24 /* Sources */,
+				5A90D20800505713E31C8059 /* Frameworks */,
+				1952132C50EFDFA40A969812 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3D83394CB4810CACFABF0D9A /* PBXTargetDependency */,
+			);
+			name = "Pods-EasyZoom_Example";
+			productName = "Pods-EasyZoom_Example";
+			productReference = 9FCBBD7EAA488244A89EAED1 /* Pods_EasyZoom_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7B43A3BF17C60D7889E0CC46 /* Pods-EasyZoom_Example-EasyZoom */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 37C9E9E197E999D655ACADBA /* Build configuration list for PBXNativeTarget "Pods-EasyZoom_Example-EasyZoom" */;
+			buildPhases = (
+				17977CF50DD5ADC2791AF491 /* Sources */,
+				F3E61C963FBE28FD7AA04977 /* Frameworks */,
+				00AA13239854AFF2EA18A5F6 /* Resources */,
+				83AAF4435381C4DD6A44567F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				78AD48DB0F6CA5ABA5662633 /* PBXTargetDependency */,
+			);
+			name = "Pods-EasyZoom_Example-EasyZoom";
+			productName = "Pods-EasyZoom_Example-EasyZoom";
+			productReference = ED1DF20B403192FEB3CF631C /* EasyZoom.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B2DC15A44881981A64F8B384 /* Pods-EasyZoom_Tests-EasyZoom-EasyZoom */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4DACDC86D931D36DC01EBC3 /* Build configuration list for PBXNativeTarget "Pods-EasyZoom_Tests-EasyZoom-EasyZoom" */;
+			buildPhases = (
+				3B381378C5DE6FEAC83D6C36 /* Sources */,
+				38CFCF0B9EEA5E5F2A9435BA /* Frameworks */,
+				632E2783358EF27DF6765155 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-EasyZoom_Tests-EasyZoom-EasyZoom";
+			productName = "Pods-EasyZoom_Tests-EasyZoom-EasyZoom";
+			productReference = CA5CFEA20E42A1714EEBE2A7 /* EasyZoom.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		C3039210FE60EB86507F700A /* Pods-EasyZoom_Example-EasyZoom-EasyZoom */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D88C837C2BD783099874820D /* Build configuration list for PBXNativeTarget "Pods-EasyZoom_Example-EasyZoom-EasyZoom" */;
+			buildPhases = (
+				3AF0F8E26B757ABAFE53AF25 /* Sources */,
+				A26058E8C89445812689EE46 /* Frameworks */,
+				C4B74FC285AD03373512BBF3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-EasyZoom_Example-EasyZoom-EasyZoom";
+			productName = "Pods-EasyZoom_Example-EasyZoom-EasyZoom";
+			productReference = 959D443B5622F5FEFDCA64CE /* EasyZoom.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		DC2E0FF7CC308F11DA6A81CF /* Pods-EasyZoom_Tests-Quick */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6621E119187EF68F9AE32566 /* Build configuration list for PBXNativeTarget "Pods-EasyZoom_Tests-Quick" */;
+			buildPhases = (
+				DF804D5CC96D6ABF80D7D60C /* Sources */,
+				FA43BD9AC85245091E56789A /* Frameworks */,
+				91B6BE2EB477ECA20B791B10 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-EasyZoom_Tests-Quick";
+			productName = "Pods-EasyZoom_Tests-Quick";
+			productReference = 0E59E831D7B140CD2237F5F1 /* Quick.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E9E9000DB88EBB2DC908D548 /* Pods-EasyZoom_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 352AAB1398F1EAC3980BE3B6 /* Build configuration list for PBXNativeTarget "Pods-EasyZoom_Tests" */;
+			buildPhases = (
+				FFC58A1764AF6558F02136C2 /* Sources */,
+				3F9BE725CE6669BF50E6008E /* Frameworks */,
+				C31C79D0BEEE220DE085020C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				37A03AD8266C2A0678A94DDF /* PBXTargetDependency */,
+				D3E141C3942F1BE861EA7004 /* PBXTargetDependency */,
+				B8136AF91D5920BE95F26E08 /* PBXTargetDependency */,
+				FBE10A121F36A337272DB9FB /* PBXTargetDependency */,
+				00A1C89A68CD1BBAEDBA11D2 /* PBXTargetDependency */,
+			);
+			name = "Pods-EasyZoom_Tests";
+			productName = "Pods-EasyZoom_Tests";
+			productReference = 3B81522CEC9F5019E2618B4F /* Pods_EasyZoom_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F59301BC73A5E60E7DA0487A /* Pods-EasyZoom_Tests-Nimble */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A6D8440B09A3D8526A5CDEE /* Build configuration list for PBXNativeTarget "Pods-EasyZoom_Tests-Nimble" */;
+			buildPhases = (
+				C1C1B6DA14030C991E3B3733 /* Sources */,
+				2314BCD691E27D674F469079 /* Frameworks */,
+				7BF41760D8A3EAB5DBEBA8D0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-EasyZoom_Tests-Nimble";
+			productName = "Pods-EasyZoom_Tests-Nimble";
+			productReference = FCAA55BE963E5668D955C27B /* Nimble.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FDBC6A66D4765386326430B6 /* Pods-EasyZoom_Tests-Nimble-Snapshots */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F28F5B2508A8A3C6E61E3DCF /* Build configuration list for PBXNativeTarget "Pods-EasyZoom_Tests-Nimble-Snapshots" */;
+			buildPhases = (
+				00C3DF3540497FDBCA609663 /* Sources */,
+				318A5EDDBE5BFA755DD6EF3D /* Frameworks */,
+				679D3192DA0C180055556543 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				55F9B926BEBDBE437745BCF3 /* PBXTargetDependency */,
+				64EFF02E09CE2C8D0E94D658 /* PBXTargetDependency */,
+				C37A9753C99963364DD0133E /* PBXTargetDependency */,
+			);
+			name = "Pods-EasyZoom_Tests-Nimble-Snapshots";
+			productName = "Pods-EasyZoom_Tests-Nimble-Snapshots";
+			productReference = 510A98558859F3949E066967 /* Nimble_Snapshots.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		10D6FCBEF4C3E70E1B456B2A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+			};
+			buildConfigurationList = C34BC172BE67F1D5DEC1E9CE /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D23E547192DE80D917CD12DC;
+			productRefGroup = 82D78499388347F031A61B8E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7359EE6E3467A42ADB1F2A5F /* Pods-EasyZoom_Example */,
+				7B43A3BF17C60D7889E0CC46 /* Pods-EasyZoom_Example-EasyZoom */,
+				C3039210FE60EB86507F700A /* Pods-EasyZoom_Example-EasyZoom-EasyZoom */,
+				E9E9000DB88EBB2DC908D548 /* Pods-EasyZoom_Tests */,
+				3CF663156049DC08BF427ED2 /* Pods-EasyZoom_Tests-EasyZoom */,
+				B2DC15A44881981A64F8B384 /* Pods-EasyZoom_Tests-EasyZoom-EasyZoom */,
+				65C9AB9F613288D9668075A6 /* Pods-EasyZoom_Tests-FBSnapshotTestCase */,
+				F59301BC73A5E60E7DA0487A /* Pods-EasyZoom_Tests-Nimble */,
+				FDBC6A66D4765386326430B6 /* Pods-EasyZoom_Tests-Nimble-Snapshots */,
+				DC2E0FF7CC308F11DA6A81CF /* Pods-EasyZoom_Tests-Quick */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		00AA13239854AFF2EA18A5F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3844F6BA034D2A4CFB2521E /* EasyZoom.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		632E2783358EF27DF6765155 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4B74FC285AD03373512BBF3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAA3C4128C841039AE06E64A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7AEE32C09F2DF1E25F27CCD /* EasyZoom.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		00C3DF3540497FDBCA609663 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8295889F8FD4925630BBAC9F /* HaveValidSnapshot.swift in Sources */,
+				0D51DE1427B7D0698F9D2F22 /* Pods-EasyZoom_Tests-Nimble-Snapshots-dummy.m in Sources */,
+				77C0C6F22C69E01867B1112C /* PrettySyntax.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17977CF50DD5ADC2791AF491 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE486C229834F3FB1927C0F1 /* EasyZoom.swift in Sources */,
+				4968164E3806EF14D49D1153 /* Pods-EasyZoom_Example-EasyZoom-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F88387DF6FAF2934E317682 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C89AECA16B9A68C1A45E4ADF /* FBSnapshotTestCase.m in Sources */,
+				45640C50DEA0310F434FB470 /* FBSnapshotTestCasePlatform.m in Sources */,
+				1BDD201632D5759F737CB06A /* FBSnapshotTestController.m in Sources */,
+				0DC65A7A97415080A8350C41 /* Pods-EasyZoom_Tests-FBSnapshotTestCase-dummy.m in Sources */,
+				623501F7FDD9682C17C79BDD /* UIImage+Compare.m in Sources */,
+				4B318E0EA65255DB3CC33738 /* UIImage+Diff.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3AF0F8E26B757ABAFE53AF25 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B381378C5DE6FEAC83D6C36 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7829E260BF82BEF19B433B24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E28B0795B9E742E786226B3 /* Pods-EasyZoom_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C10D010052DF5E7C7B6E338F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9E7E32BCBAE23A7751DA6B0 /* EasyZoom.swift in Sources */,
+				119D2B0277CF5ED95B296F23 /* Pods-EasyZoom_Tests-EasyZoom-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1C1B6DA14030C991E3B3733 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3DF8F65EEE4D390E21CAB3A /* AdapterProtocols.swift in Sources */,
+				185E3A065ACA538876658096 /* AllPass.swift in Sources */,
+				5305380F0C49FEBAEF3FCBD3 /* AssertionRecorder.swift in Sources */,
+				4342F20E2C5B74043AAB8553 /* AsyncMatcherWrapper.swift in Sources */,
+				DC137E8771C030CADE5C7D44 /* BasicMatcherWrapper.swift in Sources */,
+				7C4FA71B4E453F9152A9FC4D /* BeAKindOf.swift in Sources */,
+				F8DFED4AC9E23F605940E969 /* BeAnInstanceOf.swift in Sources */,
+				8D75DD963A41EFC85096E10E /* BeCloseTo.swift in Sources */,
+				51CC1C26C417E6020861FBEF /* BeEmpty.swift in Sources */,
+				8019561F7F4BD51B793FE312 /* BeGreaterThan.swift in Sources */,
+				688B4D97E5A0A8963BAA9970 /* BeGreaterThanOrEqualTo.swift in Sources */,
+				4A3255DCD5DFD3BE2EB5BA2E /* BeIdenticalTo.swift in Sources */,
+				194E13218CC04E22FECDC5DE /* BeLessThan.swift in Sources */,
+				3C020F949FD4B3B4EB6D6877 /* BeLessThanOrEqual.swift in Sources */,
+				41003FBDB7838D7C9EA2FB90 /* BeLogical.swift in Sources */,
+				2C8EF86EC218613C76ABB54B /* BeNil.swift in Sources */,
+				A029F7EA8157929F9951A6BF /* BeginWith.swift in Sources */,
+				D2EDC961772C85C0455B347D /* Contain.swift in Sources */,
+				062A0C996C7C26CB5073D1C6 /* DSL+Wait.swift in Sources */,
+				6D7FC40815461CE649C2539B /* DSL.m in Sources */,
+				1D5693EFBCE73CBD7B1DF917 /* DSL.swift in Sources */,
+				97428F78D1850315B3D8DA26 /* EndWith.swift in Sources */,
+				BF4168ED3638AA54F8BD8121 /* Equal.swift in Sources */,
+				9BC8D0F2F024290F4277AC3B /* Expectation.swift in Sources */,
+				2F886CD2D1AB5F01CE33C106 /* Expression.swift in Sources */,
+				7463EC062C14AD87D453799D /* FailureMessage.swift in Sources */,
+				0765BB4A56281C77E1816328 /* FullMatcherWrapper.swift in Sources */,
+				38307643592DCDC246FC996E /* Functional.swift in Sources */,
+				CA749CFD338B8C87CAA14D5D /* Match.swift in Sources */,
+				9621C01B05ABD064C0C6DA84 /* MatcherFunc.swift in Sources */,
+				DA516F144B3D83B0D8EFECAC /* MatcherProtocols.swift in Sources */,
+				3FFD4AB5E2680BD7B5EE285A /* NMBExceptionCapture.m in Sources */,
+				531AF702D4DC282A31D772CD /* NimbleXCTestHandler.swift in Sources */,
+				48BA5B498932DD0D4C28E550 /* NonNilMatcherWrapper.swift in Sources */,
+				F03132B9BC665ECAE816B646 /* ObjCMatcher.swift in Sources */,
+				777AE9970E427AE4C4B87F13 /* Pods-EasyZoom_Tests-Nimble-dummy.m in Sources */,
+				37165F755F0FBFD1341AB7F8 /* Poll.swift in Sources */,
+				E9246483EF2E6073A11EFF61 /* RaisesException.swift in Sources */,
+				5AD5143254C9E6E9D4DD6450 /* SourceLocation.swift in Sources */,
+				7569EA72B996CB4342BCEBA0 /* Stringers.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF804D5CC96D6ABF80D7D60C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61E8AD771873C0ECCE8BC400 /* Callsite.swift in Sources */,
+				45E33B7EB8C24AC528DEDA84 /* Closures.swift in Sources */,
+				B100F224C714FFB830D002CB /* Configuration.swift in Sources */,
+				F1FEE044F0FF2A2951AAF93C /* DSL.swift in Sources */,
+				3DE52EBDC52E836ABF6C8FF5 /* Example.swift in Sources */,
+				5C51A58E508FBAD450A52489 /* ExampleGroup.swift in Sources */,
+				5F451303C62818DDB7C62437 /* ExampleHooks.swift in Sources */,
+				421A9236BAFF63326C237ED4 /* ExampleMetadata.swift in Sources */,
+				72CD6702A8910715E911EF6F /* Failure.swift in Sources */,
+				EC1DC4E3316C1534E27ED215 /* Filter.swift in Sources */,
+				42F5FEA757734EAF10AB9992 /* NSString+QCKSelectorName.m in Sources */,
+				6035F76C7531C2BB8A34E4C9 /* Pods-EasyZoom_Tests-Quick-dummy.m in Sources */,
+				DC24D6B237FA5F9DA86D437D /* QCKDSL.m in Sources */,
+				487096C11902C8A663FC52EC /* QuickConfiguration.m in Sources */,
+				446EDE301F875FD89262D0E5 /* QuickSpec.m in Sources */,
+				25F5EA956AE13DF81DB52671 /* SuiteHooks.swift in Sources */,
+				A1E667626E7015F8E460ABC8 /* World+DSL.swift in Sources */,
+				57138B76DA5B46D4CE159B9D /* World.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFC58A1764AF6558F02136C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9606E735EF682FC2B855CF3F /* Pods-EasyZoom_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		00A1C89A68CD1BBAEDBA11D2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-EasyZoom_Tests-Quick";
+			target = DC2E0FF7CC308F11DA6A81CF /* Pods-EasyZoom_Tests-Quick */;
+			targetProxy = B09D04A57CA7A2105E8666E7 /* PBXContainerItemProxy */;
+		};
+		37A03AD8266C2A0678A94DDF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-EasyZoom_Tests-EasyZoom";
+			target = 3CF663156049DC08BF427ED2 /* Pods-EasyZoom_Tests-EasyZoom */;
+			targetProxy = D554FBBEE03847FC57C34F6A /* PBXContainerItemProxy */;
+		};
+		3D83394CB4810CACFABF0D9A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-EasyZoom_Example-EasyZoom";
+			target = 7B43A3BF17C60D7889E0CC46 /* Pods-EasyZoom_Example-EasyZoom */;
+			targetProxy = 50CD834D2A9E193D114480B8 /* PBXContainerItemProxy */;
+		};
+		55F9B926BEBDBE437745BCF3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-EasyZoom_Tests-FBSnapshotTestCase";
+			target = 65C9AB9F613288D9668075A6 /* Pods-EasyZoom_Tests-FBSnapshotTestCase */;
+			targetProxy = 07DE32389B8965C7295AE7C9 /* PBXContainerItemProxy */;
+		};
+		64EFF02E09CE2C8D0E94D658 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-EasyZoom_Tests-Nimble";
+			target = F59301BC73A5E60E7DA0487A /* Pods-EasyZoom_Tests-Nimble */;
+			targetProxy = 37FD4F262F338934E75B96C2 /* PBXContainerItemProxy */;
+		};
+		78AD48DB0F6CA5ABA5662633 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-EasyZoom_Example-EasyZoom-EasyZoom";
+			target = C3039210FE60EB86507F700A /* Pods-EasyZoom_Example-EasyZoom-EasyZoom */;
+			targetProxy = 4539514C0453B98F799EDA69 /* PBXContainerItemProxy */;
+		};
+		B8136AF91D5920BE95F26E08 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-EasyZoom_Tests-Nimble";
+			target = F59301BC73A5E60E7DA0487A /* Pods-EasyZoom_Tests-Nimble */;
+			targetProxy = 9EFBAC846453BE6AFD59AE40 /* PBXContainerItemProxy */;
+		};
+		C37A9753C99963364DD0133E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-EasyZoom_Tests-Quick";
+			target = DC2E0FF7CC308F11DA6A81CF /* Pods-EasyZoom_Tests-Quick */;
+			targetProxy = 5A1492A20BE030DD7A54A356 /* PBXContainerItemProxy */;
+		};
+		D3E141C3942F1BE861EA7004 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-EasyZoom_Tests-FBSnapshotTestCase";
+			target = 65C9AB9F613288D9668075A6 /* Pods-EasyZoom_Tests-FBSnapshotTestCase */;
+			targetProxy = B8710C1D7115F4998C812FAA /* PBXContainerItemProxy */;
+		};
+		E14AFF94AA6E164FA548FB5B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-EasyZoom_Tests-EasyZoom-EasyZoom";
+			target = B2DC15A44881981A64F8B384 /* Pods-EasyZoom_Tests-EasyZoom-EasyZoom */;
+			targetProxy = 66A42079670F068A10D68874 /* PBXContainerItemProxy */;
+		};
+		FBE10A121F36A337272DB9FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-EasyZoom_Tests-Nimble-Snapshots";
+			target = FDBC6A66D4765386326430B6 /* Pods-EasyZoom_Tests-Nimble-Snapshots */;
+			targetProxy = 76E1D43D2FEF4EF11A138453 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		043F436021AFFC260E9A6307 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E4886EEC1928A7F289F499F /* Pods-EasyZoom_Example-EasyZoom-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-EasyZoom_Example-EasyZoom/Pods-EasyZoom_Example-EasyZoom-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-EasyZoom_Example-EasyZoom/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-EasyZoom_Example-EasyZoom/Pods-EasyZoom_Example-EasyZoom.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = EasyZoom;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		08C3F3F35C911BCB649228C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D85D994F1D01CE382BBFB7F /* Pods-EasyZoom_Tests-EasyZoom-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-EasyZoom_Tests-EasyZoom/Pods-EasyZoom_Tests-EasyZoom-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-EasyZoom_Tests-EasyZoom/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-EasyZoom_Tests-EasyZoom/Pods-EasyZoom_Tests-EasyZoom.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = EasyZoom;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1F27088176894016B3F5590A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 195E59638745D53DC1A59A24 /* Pods-EasyZoom_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-EasyZoom_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-EasyZoom_Example/Pods-EasyZoom_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_EasyZoom_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		278503026E831E5B758BE80C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E4886EEC1928A7F289F499F /* Pods-EasyZoom_Example-EasyZoom-Private.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-EasyZoom_Example";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = EasyZoom;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		40A1F393B1F608EEC8D60595 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F55D36D4C3A4A0E53B54AA49 /* Pods-EasyZoom_Tests-Nimble-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-EasyZoom_Tests-Nimble/Pods-EasyZoom_Tests-Nimble-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-EasyZoom_Tests-Nimble/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-EasyZoom_Tests-Nimble/Pods-EasyZoom_Tests-Nimble.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Nimble;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6ABD7BBEBBE2D4AEE609D26D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DF8B31A4FFB378A449C3F90 /* Pods-EasyZoom_Tests-Quick-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-EasyZoom_Tests-Quick/Pods-EasyZoom_Tests-Quick-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-EasyZoom_Tests-Quick/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-EasyZoom_Tests-Quick/Pods-EasyZoom_Tests-Quick.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Quick;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6B97CE0BE8B3F75D2A424D2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD96F289B1E1743FB35183E8 /* Pods-EasyZoom_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-EasyZoom_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-EasyZoom_Tests/Pods-EasyZoom_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_EasyZoom_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6E97D3245A3C1C2D307A1A66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D85D994F1D01CE382BBFB7F /* Pods-EasyZoom_Tests-EasyZoom-Private.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-EasyZoom_Tests";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = EasyZoom;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		7AD292B05AF0D76D835B4B14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FEFA6A91546FE04706ABB092 /* Pods-EasyZoom_Tests-FBSnapshotTestCase-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-EasyZoom_Tests-FBSnapshotTestCase/Pods-EasyZoom_Tests-FBSnapshotTestCase-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-EasyZoom_Tests-FBSnapshotTestCase/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-EasyZoom_Tests-FBSnapshotTestCase/Pods-EasyZoom_Tests-FBSnapshotTestCase.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = FBSnapshotTestCase;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		80AEC3A792A1C8B2321AA8CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8747521743128C16969B9E47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DF8B31A4FFB378A449C3F90 /* Pods-EasyZoom_Tests-Quick-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-EasyZoom_Tests-Quick/Pods-EasyZoom_Tests-Quick-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-EasyZoom_Tests-Quick/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-EasyZoom_Tests-Quick/Pods-EasyZoom_Tests-Quick.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Quick;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8F0C8C7F53B5C3E050D168F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D85D994F1D01CE382BBFB7F /* Pods-EasyZoom_Tests-EasyZoom-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-EasyZoom_Tests-EasyZoom/Pods-EasyZoom_Tests-EasyZoom-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-EasyZoom_Tests-EasyZoom/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-EasyZoom_Tests-EasyZoom/Pods-EasyZoom_Tests-EasyZoom.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = EasyZoom;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		974B8E28CD98D2DD69A99D04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF751CC0C9DE78F2EAAAF796 /* Pods-EasyZoom_Tests-Nimble-Snapshots-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-EasyZoom_Tests-Nimble-Snapshots/Pods-EasyZoom_Tests-Nimble-Snapshots-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-EasyZoom_Tests-Nimble-Snapshots/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-EasyZoom_Tests-Nimble-Snapshots/Pods-EasyZoom_Tests-Nimble-Snapshots.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Nimble_Snapshots;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A4F5BF42018F7AD3FD38B245 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D85D994F1D01CE382BBFB7F /* Pods-EasyZoom_Tests-EasyZoom-Private.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-EasyZoom_Tests";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = EasyZoom;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		AB36107A7B8B6C5005C12F32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF751CC0C9DE78F2EAAAF796 /* Pods-EasyZoom_Tests-Nimble-Snapshots-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-EasyZoom_Tests-Nimble-Snapshots/Pods-EasyZoom_Tests-Nimble-Snapshots-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-EasyZoom_Tests-Nimble-Snapshots/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-EasyZoom_Tests-Nimble-Snapshots/Pods-EasyZoom_Tests-Nimble-Snapshots.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Nimble_Snapshots;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AB791D62E69D409ED31F6BFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35472E960CA9C44147E5BD74 /* Pods-EasyZoom_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-EasyZoom_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-EasyZoom_Tests/Pods-EasyZoom_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_EasyZoom_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B22608242163CDB680DFA5E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		D34B61933C85201568DA0FE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E4886EEC1928A7F289F499F /* Pods-EasyZoom_Example-EasyZoom-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-EasyZoom_Example-EasyZoom/Pods-EasyZoom_Example-EasyZoom-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-EasyZoom_Example-EasyZoom/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-EasyZoom_Example-EasyZoom/Pods-EasyZoom_Example-EasyZoom.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = EasyZoom;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D3930D70E5D4293B2467FFD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F55D36D4C3A4A0E53B54AA49 /* Pods-EasyZoom_Tests-Nimble-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-EasyZoom_Tests-Nimble/Pods-EasyZoom_Tests-Nimble-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-EasyZoom_Tests-Nimble/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-EasyZoom_Tests-Nimble/Pods-EasyZoom_Tests-Nimble.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Nimble;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D5E1084CC53DA88EA8CA5B4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC41A77A486624147FEE4042 /* Pods-EasyZoom_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-EasyZoom_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-EasyZoom_Example/Pods-EasyZoom_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_EasyZoom_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F8FCA0EB3DD4F3C936EA8A79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E4886EEC1928A7F289F499F /* Pods-EasyZoom_Example-EasyZoom-Private.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-EasyZoom_Example";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = EasyZoom;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		FC345593A6390EFB820754E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FEFA6A91546FE04706ABB092 /* Pods-EasyZoom_Tests-FBSnapshotTestCase-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-EasyZoom_Tests-FBSnapshotTestCase/Pods-EasyZoom_Tests-FBSnapshotTestCase-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-EasyZoom_Tests-FBSnapshotTestCase/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-EasyZoom_Tests-FBSnapshotTestCase/Pods-EasyZoom_Tests-FBSnapshotTestCase.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = FBSnapshotTestCase;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		352AAB1398F1EAC3980BE3B6 /* Build configuration list for PBXNativeTarget "Pods-EasyZoom_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B97CE0BE8B3F75D2A424D2E /* Debug */,
+				AB791D62E69D409ED31F6BFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		37C9E9E197E999D655ACADBA /* Build configuration list for PBXNativeTarget "Pods-EasyZoom_Example-EasyZoom" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D34B61933C85201568DA0FE1 /* Debug */,
+				043F436021AFFC260E9A6307 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6621E119187EF68F9AE32566 /* Build configuration list for PBXNativeTarget "Pods-EasyZoom_Tests-Quick" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8747521743128C16969B9E47 /* Debug */,
+				6ABD7BBEBBE2D4AEE609D26D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7A3AE25FA0401A1BFF600511 /* Build configuration list for PBXNativeTarget "Pods-EasyZoom_Tests-EasyZoom" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08C3F3F35C911BCB649228C5 /* Debug */,
+				8F0C8C7F53B5C3E050D168F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F35DFE9D22FF68401916E8F /* Build configuration list for PBXNativeTarget "Pods-EasyZoom_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F27088176894016B3F5590A /* Debug */,
+				D5E1084CC53DA88EA8CA5B4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		89E2856CEFDC4E32BC2D806A /* Build configuration list for PBXNativeTarget "Pods-EasyZoom_Tests-FBSnapshotTestCase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7AD292B05AF0D76D835B4B14 /* Debug */,
+				FC345593A6390EFB820754E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A6D8440B09A3D8526A5CDEE /* Build configuration list for PBXNativeTarget "Pods-EasyZoom_Tests-Nimble" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40A1F393B1F608EEC8D60595 /* Debug */,
+				D3930D70E5D4293B2467FFD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C34BC172BE67F1D5DEC1E9CE /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B22608242163CDB680DFA5E5 /* Debug */,
+				80AEC3A792A1C8B2321AA8CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D88C837C2BD783099874820D /* Build configuration list for PBXNativeTarget "Pods-EasyZoom_Example-EasyZoom-EasyZoom" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				278503026E831E5B758BE80C /* Debug */,
+				F8FCA0EB3DD4F3C936EA8A79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F28F5B2508A8A3C6E61E3DCF /* Build configuration list for PBXNativeTarget "Pods-EasyZoom_Tests-Nimble-Snapshots" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				974B8E28CD98D2DD69A99D04 /* Debug */,
+				AB36107A7B8B6C5005C12F32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4DACDC86D931D36DC01EBC3 /* Build configuration list for PBXNativeTarget "Pods-EasyZoom_Tests-EasyZoom-EasyZoom" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E97D3245A3C1C2D307A1A66 /* Debug */,
+				A4F5BF42018F7AD3FD38B245 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 10D6FCBEF4C3E70E1B456B2A /* Project object */;
+}

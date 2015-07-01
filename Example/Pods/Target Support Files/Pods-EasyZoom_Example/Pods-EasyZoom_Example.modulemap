@@ -1,0 +1,6 @@
+framework module Pods_EasyZoom_Example {
+  umbrella header "Pods-EasyZoom_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
