@@ -10,12 +10,10 @@
 Pod::Spec.new do |s|
   s.name             = "EasyZoom"
   s.version          = "0.1.0"
-  s.summary          = "A short description of EasyZoom."
+  s.summary          = "This pod lets people have zoom action for their image views.."
   s.description      = <<-DESC
-                       An optional longer description of EasyZoom
-
-                       * Markdown format.
-                       * Don't worry about the indent, we strip it!
+						This pod lets people have zoom action for their image views and centerize their
+					images very easily
                        DESC
   s.homepage         = "https://github.com/miletliyusuf/EasyZoom"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
