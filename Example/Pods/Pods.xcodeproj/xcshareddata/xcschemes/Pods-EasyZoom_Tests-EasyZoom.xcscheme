@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3CF663156049DC08BF427ED2"
+               BlueprintIdentifier = "997981B6CE15BEA718E39133"
                BuildableName = "EasyZoom.framework"
                BlueprintName = "Pods-EasyZoom_Tests-EasyZoom"
                ReferencedContainer = "container:Pods.xcodeproj">

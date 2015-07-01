@@ -2,11 +2,11 @@ source 'https://github.com/CocoaPods/Specs.git'
 use_frameworks!
 
 target 'EasyZoom_Example', :exclusive => true do
-  pod "EasyZoom", :path => "/Users/yusuf/Developer/Creating Pods/EasyZoom/EasyZoom.podspec"
+  pod "EasyZoom", :path => "../EasyZoom.podspec"
 end
 
 target 'EasyZoom_Tests', :exclusive => true do
-  pod "EasyZoom", :path => "/Users/yusuf/Developer/Creating Pods/EasyZoom/EasyZoom.podspec"
+  pod "EasyZoom", :path => "../EasyZoom.podspec"
 
   pod 'Quick', '~> 0.3.1'
   pod 'Nimble'

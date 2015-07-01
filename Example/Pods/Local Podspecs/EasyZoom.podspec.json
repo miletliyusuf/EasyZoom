@@ -1,8 +1,8 @@
 {
   "name": "EasyZoom",
   "version": "0.1.0",
-  "summary": "A short description of EasyZoom.",
-  "description": "                       An optional longer description of EasyZoom\n\n                       * Markdown format.\n                       * Don't worry about the indent, we strip it!\n",
+  "summary": "This pod lets people have zoom action for their image views..",
+  "description": "\t\t\t\t\t\tThis pod lets people have zoom action for their image views and centerize their\n\t\t\t\t\timages very easily\n",
   "homepage": "https://github.com/miletliyusuf/EasyZoom",
   "license": "MIT",
   "authors": {
