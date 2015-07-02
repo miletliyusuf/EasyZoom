@@ -12,6 +12,7 @@ import EasyZoom
 class ViewController: UIViewController {
 
 	@IBOutlet var catImageView:UIImageView!
+	@IBOutlet var catHolder:UIView!
 	var catPicture:UIImage!
 	
 	var zoom = EasyZoom()
@@ -20,8 +21,10 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
 		
+		self.view.backgroundColor = UIColor(red: 0.3, green: 0.3, blue: 0.3, alpha: 1.0)
+		
 		catPicture = UIImage(named: "cat.jpg")
-		self.zoom.zoomForImageView(catImageView, image: catPicture, superView: self.view)
+		self.zoom.zoomForImageView(catImageView, image: catPicture, superView: self.catHolder)
 		
 	}
 

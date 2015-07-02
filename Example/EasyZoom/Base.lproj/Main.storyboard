@@ -17,19 +17,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1zb-YT-bWp">
-                                <rect key="frame" x="16" y="20" width="568" height="580"/>
-                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3gE-gs-AWe">
+                                <rect key="frame" x="16" y="71" width="568" height="418"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1zb-YT-bWp">
+                                        <rect key="frame" x="8" y="8" width="552" height="402"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.40000000596046448" green="1" blue="0.80000001192092896" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="1zb-YT-bWp" secondAttribute="trailing" id="14Q-za-IKX"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="1zb-YT-bWp" secondAttribute="bottom" id="9Ko-Af-lEb"/>
-                            <constraint firstItem="1zb-YT-bWp" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="YD9-4m-VPM"/>
-                            <constraint firstItem="1zb-YT-bWp" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="vMA-Qf-uzR"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="3gE-gs-AWe" secondAttribute="bottom" constant="111" id="7iO-J4-05d"/>
+                            <constraint firstItem="3gE-gs-AWe" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="51" id="HuT-e1-MPW"/>
+                            <constraint firstItem="3gE-gs-AWe" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="avU-Ky-OIt"/>
+                            <constraint firstItem="3gE-gs-AWe" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="ecf-Pf-nzC"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="catHolder" destination="3gE-gs-AWe" id="mtB-h1-sC6"/>
                         <outlet property="catImageView" destination="1zb-YT-bWp" id="jhw-it-4FZ"/>
                     </connections>
                 </viewController>
