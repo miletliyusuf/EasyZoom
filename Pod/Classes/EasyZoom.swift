@@ -9,9 +9,16 @@ public class EasyZoom: NSObject,UIScrollViewDelegate {
 	//Instant imageView and ScrollView which will show your image and will make them zoom.
 	var instantImageView =  UIImageView()
 	var instantScrollView = UIScrollView()
+	var instantImage = UIImage()
 	var instantView = UIView()
 	
 	var didDoubleTapped = Bool()
+	
+	public init(imageView:UIImageView, image:UIImage, superView: UIView) {
+		instantView = superView
+		instantImageView = imageView
+		instantImage = image
+	}
 	
 	/**
 		This public function adds zoom for imageViews.
@@ -19,37 +26,48 @@ public class EasyZoom: NSObject,UIScrollViewDelegate {
 	 @param image: UIImage - The image of imageView
 	 @param superView: UIView - The superView which gonna cover zoomed imageView
 	 */
-	public func zoomForImageView(imageView:UIImageView, image:UIImage, superView:UIView) {
+	public func zoomForImageView() ->Void {
 		
 		//delegating of instant scrollView
 		instantScrollView.delegate = self
 		
-		instantView.frame = superView.frame
-		superView.addSubview(instantView)
-		
 		//setting instant scrollView frame to user imageView
 		instantScrollView.frame = instantView.frame
+		instantImageView.frame = CGRect(origin: CGPoint(x: 0, y: 0), size: instantImage.size)
+
+		//setting zoom area
+		instantScrollView.contentSize = instantImage.size
 		
-//		instantView.setTranslatesAutoresizingMaskIntoConstraints(false)
-		let viewDictionary = ["imageview":instantImageView,"uiview":instantView]
-//		let instantViewVCons:Array = NSLayoutConstraint.constraintsWithVisualFormat("H:|-[uiview]-|", options: NSLayoutFormatOptions(0), metrics: nil, views:viewDictionary)
-//		let instantViewHCons:Array = NSLayoutConstraint.constraintsWithVisualFormat("V:|-[uiview]-|", options: NSLayoutFormatOptions(0), metrics: nil, views: viewDictionary)
-//		
-//		superView.addConstraints(instantViewHCons)
-//		superView.addConstraints(instantViewVCons)
-		
-//		imageView.removeFromSuperview()
-		instantImageView.image = image
-//		instantImageView.frame = CGRect(origin: CGPoint(x: 0, y: 0), size: image.size)
-		instantScrollView.addSubview(instantImageView)
-		
+		let viewsDictionary = ["imageView":instantImageView,"scrollView":instantScrollView]
+		instantScrollView.setTranslatesAutoresizingMaskIntoConstraints(false)
 		instantImageView.setTranslatesAutoresizingMaskIntoConstraints(false)
-		let horizontalConstraints:Array = NSLayoutConstraint.constraintsWithVisualFormat("H:|-[imageview]-|", options: NSLayoutFormatOptions(0), metrics: nil, views:viewDictionary)
-		let verticalConstraints:Array = NSLayoutConstraint.constraintsWithVisualFormat("V:|-[imageview]-|", options: NSLayoutFormatOptions(0), metrics: nil, views: viewDictionary)
 		
+		instantImageView.image = instantImage
+		
+		instantScrollView.addSubview(instantImageView)
 		instantView.addSubview(instantScrollView)
+
+		//scrollview constraints
 		
-		instantScrollView.contentSize = image.size
+		let scrollHCons:Array = NSLayoutConstraint.constraintsWithVisualFormat("H:|-[scrollView]-|", options: NSLayoutFormatOptions(0), metrics: nil, views: viewsDictionary)
+		let scrollVCons:Array = NSLayoutConstraint.constraintsWithVisualFormat("V:|-[scrollView]-|", options: NSLayoutFormatOptions(0), metrics: nil, views: viewsDictionary)
+		instantView.addConstraints(scrollHCons)
+		instantView.addConstraints(scrollVCons)
+		
+		instantScrollView.setNeedsLayout()
+		instantScrollView.setNeedsDisplay()
+		
+		//imageView constraints
+		
+		let imageViewSize = instantScrollView.frame.size
+		let imageViewSizesMetric = ["height":imageViewSize.height,"width":imageViewSize.width]
+		let imageViewVCons:Array = NSLayoutConstraint.constraintsWithVisualFormat("V:|-[imageView]", options: NSLayoutFormatOptions(0), metrics: imageViewSizesMetric, views: viewsDictionary)
+		let imageViewHCons:Array = NSLayoutConstraint.constraintsWithVisualFormat("H:|-[imageView(width)]", options: NSLayoutFormatOptions(0), metrics: imageViewSizesMetric, views: viewsDictionary)
+		instantScrollView.addConstraints(imageViewHCons)
+		instantScrollView.addConstraints(imageViewVCons)
+
+		//fixes image size
+		instantImageView.contentMode = UIViewContentMode.ScaleAspectFill
 		
 		//setting tap gesture recognizer
 		var doubleTapRecognizer = UITapGestureRecognizer(target: self, action: "didDoubleTapped:")
@@ -58,8 +76,8 @@ public class EasyZoom: NSObject,UIScrollViewDelegate {
 		instantScrollView.addGestureRecognizer(doubleTapRecognizer)
 		didDoubleTapped = true
 		
-		var panGesture = UIPanGestureRecognizer(target: self, action: "handlePan:")
-		instantScrollView.addGestureRecognizer(panGesture)
+//		var panGesture = UIPanGestureRecognizer(target: self, action: "handlePan:")
+//		instantScrollView.addGestureRecognizer(panGesture)
 		
 		//setting minumum and maximum zoom scale
 		let scrollViewFrame = instantScrollView.frame
@@ -70,12 +88,9 @@ public class EasyZoom: NSObject,UIScrollViewDelegate {
 		
 		instantScrollView.maximumZoomScale = 1.0
 		instantScrollView.zoomScale = minScale
-	
-		instantView.addConstraints(horizontalConstraints)
-		instantView.addConstraints(verticalConstraints)
 		
 		//centerizing content
-//		centerizeContent(instantScrollView, imageView: instantImageView)
+		centerizeContent(instantScrollView, imageView: instantImageView)
 	}
 	
 	public func handlePan(recognizer:UIPanGestureRecognizer) {
@@ -149,11 +164,12 @@ public class EasyZoom: NSObject,UIScrollViewDelegate {
 			instantScrollView.zoomScale = 0;
 			didDoubleTapped = true
 		}
+		
 	}
 	
 	//pragma mark UIScrollView Delegate Methods
 	public func scrollViewDidZoom(scrollView: UIScrollView) {
-//		centerizeContent(instantScrollView, imageView: instantImageView)
+		centerizeContent(instantScrollView, imageView: instantImageView)
 //		didDoubleTapped = false
 	}
 	
