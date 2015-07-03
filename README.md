@@ -1,3 +1,5 @@
+#This Pod file is not ready to use and did not published on CocoaPods, yet!
+
 # EasyZoom
 
 [![CI Status](http://img.shields.io/travis/miletliyusuf/EasyZoom.svg?style=flat)](https://travis-ci.org/miletliyusuf/EasyZoom)
