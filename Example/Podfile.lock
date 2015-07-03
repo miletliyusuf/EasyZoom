@@ -9,7 +9,7 @@ PODS:
   - Quick (0.3.1)
 
 DEPENDENCIES:
-  - EasyZoom (from `/Users/yusuf/Developer/CreatingPods/EasyZoom/EasyZoom.podspec`)
+  - EasyZoom (from `../EasyZoom.podspec`)
   - FBSnapshotTestCase
   - Nimble
   - Nimble-Snapshots
@@ -17,10 +17,10 @@ DEPENDENCIES:
 
 EXTERNAL SOURCES:
   EasyZoom:
-    :path: /Users/yusuf/Developer/CreatingPods/EasyZoom/EasyZoom.podspec
+    :path: ../EasyZoom.podspec
 
 SPEC CHECKSUMS:
-  EasyZoom: 5bfe8364dbadae3de8d8c528c82183f7aa3d4ea1
+  EasyZoom: 1dfff1742af009291903f56938cf495f4869c197
   FBSnapshotTestCase: 3dc3899168747a0319c5278f5b3445c13a6532dd
   Nimble: 49b7a7da8919f42823d37c6d68cc6d15a7009f32
   Nimble-Snapshots: 216ae8c0ea3f4105be1606749fe15d8b2138af40
