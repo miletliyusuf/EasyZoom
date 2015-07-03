@@ -93,9 +93,19 @@ public class EasyZoom: NSObject,UIScrollViewDelegate {
 		centerizeContent(instantScrollView, imageView: instantImageView)
 	}
 	
+	public func panToFullScreenView() {
+		let panToFullScreenRecognizer = UIPanGestureRecognizer(target: self, action: "panToFullScreen:")
+		instantScrollView.addGestureRecognizer(panToFullScreenRecognizer)
+	}
+	
+	func panToFullScreen(recognizer:UIPanGestureRecognizer) {
+		let translation = recognizer.translationInView(instantView)
+		if let view = recognizer.view {
+			view.center = CGPoint(x: view.center.x + translation.x , y: view.center.y + translation.y)
+		}
+	}
+	
 	public func handlePan(recognizer:UIPanGestureRecognizer) {
-		
-		UIApplication.sharedApplication().statusBarHidden = true
 		
 		let translation = recognizer.translationInView(instantView)
 		if let view = recognizer.view {
