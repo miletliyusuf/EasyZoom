@@ -3,6 +3,7 @@
  */
 import UIKit
 import Foundation
+import ImageIO
 
 public class EasyZoom: NSObject,UIScrollViewDelegate {
 	
@@ -14,19 +15,21 @@ public class EasyZoom: NSObject,UIScrollViewDelegate {
 	public var mainView = UIView()
 	
 	var doubleTapRecognizer:UITapGestureRecognizer
+	var singleTapRecognizer:UITapGestureRecognizer
 	
 	var didDoubleTapped = Bool()
 	
 	public init(imageView:UIImageView, image:UIImage, superView: UIView) {
 		instantView = superView
 		instantImageView = imageView
+		instantImageView.userInteractionEnabled = true
 		instantImage = image
-		doubleTapRecognizer = UITapGestureRecognizer()
 		
+		doubleTapRecognizer = UITapGestureRecognizer()
+		singleTapRecognizer = UITapGestureRecognizer()
 		//scroll visible
 		instantScrollView.showsHorizontalScrollIndicator = false
 		instantScrollView.showsVerticalScrollIndicator = false
-
 	}
 	
 	/**
@@ -40,102 +43,136 @@ public class EasyZoom: NSObject,UIScrollViewDelegate {
 		//delegating of instant scrollView
 		instantScrollView.delegate = self
 		
+		instantImage = cropTheImage(instantImage, i_width: instantView.frame.size.width, i_height: instantView.frame.size.height)
 		
 		//setting instant scrollView frame to user imageView
 		instantScrollView.frame = instantView.frame
 		instantImageView.frame = CGRect(origin: CGPoint(x: 0, y: 0), size: instantImage.size)
 
-		//setting zoom area
+		//setting constraints
+		setConstraintsImageAndScroll(instantView)
+		
+		//setting tap gesture recognizer
+		doubleTapRecognizer = UITapGestureRecognizer(target: self, action: "didDoubleTapped:")
+		doubleTapRecognizer.numberOfTapsRequired = 2
+		doubleTapRecognizer.numberOfTouchesRequired = 1
+		instantImageView.addGestureRecognizer(doubleTapRecognizer)
+		didDoubleTapped = true
+		
+		//setting minumum and maximum zoom scale
+		setTheZoomScale()
+		
+		
+		//centerizing content
+		centerizeContent(instantScrollView, imageView: instantImageView)
+	}
+	
+	func setConstraintsImageAndScroll(superView:UIView) {
 		instantScrollView.contentSize = instantImage.size
 		
 		let viewsDictionary = ["imageView":instantImageView,"scrollView":instantScrollView]
 		instantScrollView.setTranslatesAutoresizingMaskIntoConstraints(false)
 		instantImageView.setTranslatesAutoresizingMaskIntoConstraints(false)
 		
-		instantImageView.image = instantImage
-		
 		instantScrollView.addSubview(instantImageView)
-		instantView.addSubview(instantScrollView)
-
+		superView.addSubview(instantScrollView)
+		
 		//scrollview constraints
 		
 		let scrollHCons:Array = NSLayoutConstraint.constraintsWithVisualFormat("H:|-[scrollView]-|", options: NSLayoutFormatOptions(0), metrics: nil, views: viewsDictionary)
 		let scrollVCons:Array = NSLayoutConstraint.constraintsWithVisualFormat("V:|-[scrollView]-|", options: NSLayoutFormatOptions(0), metrics: nil, views: viewsDictionary)
-		instantView.addConstraints(scrollHCons)
-		instantView.addConstraints(scrollVCons)
+		superView.addConstraints(scrollHCons)
+		superView.addConstraints(scrollVCons)
 		
 		instantScrollView.setNeedsLayout()
 		instantScrollView.setNeedsDisplay()
 		
 		//imageView constraints
-		
 		let imageViewSize = instantScrollView.frame.size
 		let imageViewSizesMetric = ["height":imageViewSize.height,"width":imageViewSize.width]
 		let imageViewVCons:Array = NSLayoutConstraint.constraintsWithVisualFormat("V:|-[imageView]", options: NSLayoutFormatOptions(0), metrics: imageViewSizesMetric, views: viewsDictionary)
-		let imageViewHCons:Array = NSLayoutConstraint.constraintsWithVisualFormat("H:|-[imageView(width)]", options: NSLayoutFormatOptions(0), metrics: imageViewSizesMetric, views: viewsDictionary)
+		let imageViewHCons:Array = NSLayoutConstraint.constraintsWithVisualFormat("H:|-[imageView]", options: NSLayoutFormatOptions(0), metrics: imageViewSizesMetric, views: viewsDictionary)
 		instantScrollView.addConstraints(imageViewHCons)
 		instantScrollView.addConstraints(imageViewVCons)
-
+		
 		//fixes image size
-		instantImageView.contentMode = UIViewContentMode.ScaleAspectFill
+		instantImageView.contentMode = .ScaleAspectFit
+		instantImageView.image = instantImage
+	}
+	
+	func setTheZoomScale() {
 		
-		//setting tap gesture recognizer
-		doubleTapRecognizer = UITapGestureRecognizer(target: self, action: "didDoubleTapped:")
-		doubleTapRecognizer.numberOfTapsRequired = 2
-		doubleTapRecognizer.numberOfTouchesRequired = 1
-		instantScrollView.addGestureRecognizer(doubleTapRecognizer)
-		didDoubleTapped = true
-		
-		//setting minumum and maximum zoom scale
 		let scrollViewFrame = instantScrollView.frame
 		let scaleWidth = scrollViewFrame.size.width / instantScrollView.contentSize.width
 		let scaleHeight = scrollViewFrame.size.height / instantScrollView.contentSize.height
+		
 		let minScale = min(scaleWidth, scaleHeight)
 		instantScrollView.minimumZoomScale = minScale
 		
 		instantScrollView.maximumZoomScale = 1.0
 		instantScrollView.zoomScale = minScale
 		
-		//centerizing content
-		centerizeContent(instantScrollView, imageView: instantImageView)
 	}
+	
 	/**
 		This is for single tap tap to new view which has same features with the normal one
 	*/
 	public func singleTouchToNewView() {
-		let singleTapRecognizer:UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "singleTouchHandler")
+		singleTapRecognizer = UITapGestureRecognizer(target: self, action: "singleTouchHandler")
 		singleTapRecognizer.requireGestureRecognizerToFail(doubleTapRecognizer)
-		instantScrollView.addGestureRecognizer(singleTapRecognizer)
-		
-		var panGesture = UIPanGestureRecognizer(target: self, action: "handlePan:")
-		instantScrollView.addGestureRecognizer(panGesture)
+		instantImageView.addGestureRecognizer(singleTapRecognizer)
+//		var panGesture = UIPanGestureRecognizer(target: self, action: "handlePan:")
+//		instantScrollView.addGestureRecognizer(panGesture)
 	}
 	
 	func singleTouchHandler() {
-		let screenSize:CGRect = UIScreen.mainScreen().bounds
+		let screenSize:CGRect = UIScreen.mainScreen().bounds.standardizedRect
 		var fullSizeView = UIView(frame: screenSize)
-		fullSizeView.backgroundColor = UIColor.blueColor()
+		fullSizeView.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(0.9)
+		instantImage = cropTheImage(instantImage, i_width: screenSize.width, i_height: screenSize.height)
 		mainView.addSubview(fullSizeView)
-		fullSizeView.addSubview(instantView)
+		setConstraintsImageAndScroll(fullSizeView)
+		setTheZoomScale()
+		centerizeContent(instantScrollView, imageView: instantImageView)
+		instantScrollView.removeGestureRecognizer(singleTapRecognizer)
 	}
 	
 	
-	func panToFullScreenView() {
-		let panToFullScreenRecognizer = UIPanGestureRecognizer(target: self, action: "panToFullScreen:")
-		instantScrollView.addGestureRecognizer(panToFullScreenRecognizer)
-	}
+//	func panToFullScreenView() {
+//		let panToFullScreenRecognizer = UIPanGestureRecognizer(target: self, action: "panToFullScreen:")
+//		instantScrollView.addGestureRecognizer(panToFullScreenRecognizer)
+//	}
 	
-	func panToFullScreen(recognizer:UIPanGestureRecognizer) {
-		let constantFrame:CGRect = instantImageView.frame
-		let translation = recognizer.translationInView(instantView)
-		if let view = recognizer.view {
-			view.center = CGPoint(x: view.center.x + translation.x , y: view.center.y + translation.y)
-			if (view.center.y + instantImageView.bounds.midY > instantView.bounds.midY) {
-				instantView.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(0.5)
-				instantScrollView.zoomScale = 0
-			}
-		}
-		recognizer.setTranslation(CGPointZero, inView: instantView)
+//	func panToFullScreen(recognizer:UIPanGestureRecognizer) {
+//		let constantFrame:CGRect = instantImageView.frame
+//		let translation = recognizer.translationInView(instantView)
+//		if let view = recognizer.view {
+//			view.center = CGPoint(x: view.center.x + translation.x , y: view.center.y + translation.y)
+//			if (view.center.y + instantImageView.bounds.midY > instantView.bounds.midY) {
+//				instantView.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(0.5)
+//				instantScrollView.zoomScale = 0
+//			}
+//		}
+//		recognizer.setTranslation(CGPointZero, inView: instantView)
+//	}
+	
+	func cropTheImage(sourceImage:UIImage, i_width:CGFloat, i_height:CGFloat) -> UIImage {
+
+//		var oldWidth = sourceImage.size.width
+//		var scaleFactor = i_width / oldWidth
+//		
+//		var newHeight = sourceImage.size.height * scaleFactor
+//		var newWidth = oldWidth * scaleFactor
+		
+		var newHeight = i_width
+		var newWidth = i_height
+		
+		UIGraphicsBeginImageContext(CGSizeMake(newWidth, newHeight))
+		sourceImage.drawInRect(CGRectMake(0, 0, newWidth, newHeight))
+		var newImage:UIImage = UIGraphicsGetImageFromCurrentImageContext()
+		UIGraphicsEndImageContext()
+
+		return newImage
 	}
 	
 	/**
@@ -192,6 +229,7 @@ public class EasyZoom: NSObject,UIScrollViewDelegate {
 		}
 		
 	}
+	
 	
 	//pragma mark UIScrollView Delegate Methods
 	public func scrollViewDidZoom(scrollView: UIScrollView) {
