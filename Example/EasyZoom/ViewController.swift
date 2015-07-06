@@ -26,7 +26,8 @@ class ViewController: UIViewController {
 		
 		zoom = EasyZoom(imageView: catImageView, image: catPicture, superView: catHolder)
 		zoom.zoomForImageView()
-		zoom.singleTouchToNewView(self.view)
+		zoom.mainView = self.view
+		zoom.singleTouchToNewView()
 	}
 
     override func didReceiveMemoryWarning() {

@@ -11,6 +11,9 @@ public class EasyZoom: NSObject,UIScrollViewDelegate {
 	var instantScrollView = UIScrollView()
 	var instantImage = UIImage()
 	var instantView = UIView()
+	public var mainView = UIView()
+	
+	var doubleTapRecognizer:UITapGestureRecognizer
 	
 	var didDoubleTapped = Bool()
 	
@@ -18,6 +21,12 @@ public class EasyZoom: NSObject,UIScrollViewDelegate {
 		instantView = superView
 		instantImageView = imageView
 		instantImage = image
+		doubleTapRecognizer = UITapGestureRecognizer()
+		
+		//scroll visible
+		instantScrollView.showsHorizontalScrollIndicator = false
+		instantScrollView.showsVerticalScrollIndicator = false
+
 	}
 	
 	/**
@@ -30,6 +39,7 @@ public class EasyZoom: NSObject,UIScrollViewDelegate {
 		
 		//delegating of instant scrollView
 		instantScrollView.delegate = self
+		
 		
 		//setting instant scrollView frame to user imageView
 		instantScrollView.frame = instantView.frame
@@ -70,14 +80,11 @@ public class EasyZoom: NSObject,UIScrollViewDelegate {
 		instantImageView.contentMode = UIViewContentMode.ScaleAspectFill
 		
 		//setting tap gesture recognizer
-		var doubleTapRecognizer = UITapGestureRecognizer(target: self, action: "didDoubleTapped:")
+		doubleTapRecognizer = UITapGestureRecognizer(target: self, action: "didDoubleTapped:")
 		doubleTapRecognizer.numberOfTapsRequired = 2
 		doubleTapRecognizer.numberOfTouchesRequired = 1
 		instantScrollView.addGestureRecognizer(doubleTapRecognizer)
 		didDoubleTapped = true
-		
-//		var panGesture = UIPanGestureRecognizer(target: self, action: "handlePan:")
-//		instantScrollView.addGestureRecognizer(panGesture)
 		
 		//setting minumum and maximum zoom scale
 		let scrollViewFrame = instantScrollView.frame
@@ -92,33 +99,42 @@ public class EasyZoom: NSObject,UIScrollViewDelegate {
 		//centerizing content
 		centerizeContent(instantScrollView, imageView: instantImageView)
 	}
+	/**
+		This is for single tap tap to new view which has same features with the normal one
+	*/
+	public func singleTouchToNewView() {
+		let singleTapRecognizer:UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "singleTouchHandler")
+		singleTapRecognizer.requireGestureRecognizerToFail(doubleTapRecognizer)
+		instantScrollView.addGestureRecognizer(singleTapRecognizer)
+		
+		var panGesture = UIPanGestureRecognizer(target: self, action: "handlePan:")
+		instantScrollView.addGestureRecognizer(panGesture)
+	}
 	
-	public func panToFullScreenView() {
+	func singleTouchHandler() {
+		let screenSize:CGRect = UIScreen.mainScreen().bounds
+		var fullSizeView = UIView(frame: screenSize)
+		fullSizeView.backgroundColor = UIColor.blueColor()
+		mainView.addSubview(fullSizeView)
+		fullSizeView.addSubview(instantView)
+	}
+	
+	
+	func panToFullScreenView() {
 		let panToFullScreenRecognizer = UIPanGestureRecognizer(target: self, action: "panToFullScreen:")
 		instantScrollView.addGestureRecognizer(panToFullScreenRecognizer)
 	}
 	
 	func panToFullScreen(recognizer:UIPanGestureRecognizer) {
-		let translation = recognizer.translationInView(instantView)
-		if let view = recognizer.view {
-			view.center = CGPoint(x: view.center.x + translation.x , y: view.center.y + translation.y)
-		}
-	}
-	
-	public func handlePan(recognizer:UIPanGestureRecognizer) {
-		
+		let constantFrame:CGRect = instantImageView.frame
 		let translation = recognizer.translationInView(instantView)
 		if let view = recognizer.view {
 			view.center = CGPoint(x: view.center.x + translation.x , y: view.center.y + translation.y)
 			if (view.center.y + instantImageView.bounds.midY > instantView.bounds.midY) {
-				instantView.backgroundColor = UIColor.whiteColor().colorWithAlphaComponent(0.3)
+				instantView.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(0.5)
 				instantScrollView.zoomScale = 0
-				
-				centerizeContent(instantScrollView, imageView: instantImageView)
-//				instantView.removeFromSuperview()
 			}
 		}
-		
 		recognizer.setTranslation(CGPointZero, inView: instantView)
 	}
 	
