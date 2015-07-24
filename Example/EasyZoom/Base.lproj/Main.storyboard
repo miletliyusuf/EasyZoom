@@ -18,10 +18,10 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3gE-gs-AWe">
-                                <rect key="frame" x="16" y="71" width="568" height="418"/>
+                                <rect key="frame" x="16" y="78" width="568" height="453"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1zb-YT-bWp">
-                                        <rect key="frame" x="8" y="8" width="552" height="402"/>
+                                        <rect key="frame" x="8" y="31" width="552" height="402"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.40000000596046448" green="1" blue="0.80000001192092896" alpha="1" colorSpace="calibratedRGB"/>
@@ -29,8 +29,8 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="3gE-gs-AWe" secondAttribute="bottom" constant="111" id="7iO-J4-05d"/>
-                            <constraint firstItem="3gE-gs-AWe" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="51" id="HuT-e1-MPW"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="3gE-gs-AWe" secondAttribute="bottom" constant="69" id="7iO-J4-05d"/>
+                            <constraint firstItem="3gE-gs-AWe" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="58" id="HuT-e1-MPW"/>
                             <constraint firstItem="3gE-gs-AWe" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="avU-Ky-OIt"/>
                             <constraint firstItem="3gE-gs-AWe" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="ecf-Pf-nzC"/>
                         </constraints>
