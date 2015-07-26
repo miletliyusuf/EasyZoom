@@ -19,6 +19,8 @@ public class EasyZoom: NSObject,UIScrollViewDelegate {
 	
 	var didDoubleTapped = Bool()
 	
+	var countToView = Int()
+	
 	public init(imageView:UIImageView, image:UIImage, superView: UIView) {
 		instantView = superView
 		instantImageView = imageView
@@ -49,10 +51,14 @@ public class EasyZoom: NSObject,UIScrollViewDelegate {
 		
 		//setting instant scrollView frame to user imageView
 		instantScrollView.frame = instantView.frame
-		instantImageView.frame = CGRect(origin: CGPoint(x: 0, y: 0), size: instantImage.size)
+//		instantImageView.frame = CGRect(origin: CGPoint(x: 0, y: 0), size: instantImage.size)
 
 		//setting constraints
-		setConstraintsImageAndScroll(instantView)
+		instantScrollView.contentSize = instantImage.size
+		setTheConstraints(instantImageView, superView: instantScrollView, hConstraints: "|-[subview]", vConstraints: "|-[subview]")
+		setTheConstraints(instantScrollView, superView: instantView, hConstraints: "|-[subview]-|", vConstraints: "|-[subview]-|")
+		instantImageView.contentMode = .ScaleAspectFit
+		instantImageView.image = instantImage
 		
 		//setting tap gesture recognizer
 		doubleTapRecognizer = UITapGestureRecognizer(target: self, action: "didDoubleTapped:")
@@ -64,42 +70,11 @@ public class EasyZoom: NSObject,UIScrollViewDelegate {
 		//setting minumum and maximum zoom scale
 		setTheZoomScale()
 		
-		
 		//centerizing content
 		centerizeContent(instantScrollView, imageView: instantImageView)
-	}
-	
-	func setConstraintsImageAndScroll(superView:UIView) {
-		instantScrollView.contentSize = instantImage.size
 		
-		let viewsDictionary = ["imageView":instantImageView,"scrollView":instantScrollView]
-		instantScrollView.setTranslatesAutoresizingMaskIntoConstraints(false)
-		instantImageView.setTranslatesAutoresizingMaskIntoConstraints(false)
-		
-		instantScrollView.addSubview(instantImageView)
-		superView.addSubview(instantScrollView)
-		
-		//scrollview constraints
-		
-		let scrollHCons:Array = NSLayoutConstraint.constraintsWithVisualFormat("H:|-[scrollView]-|", options: NSLayoutFormatOptions(0), metrics: nil, views: viewsDictionary)
-		let scrollVCons:Array = NSLayoutConstraint.constraintsWithVisualFormat("V:|-[scrollView]-|", options: NSLayoutFormatOptions(0), metrics: nil, views: viewsDictionary)
-		superView.addConstraints(scrollHCons)
-		superView.addConstraints(scrollVCons)
-		
-		instantScrollView.setNeedsLayout()
-		instantScrollView.setNeedsDisplay()
-		
-		//imageView constraints
-		let imageViewSize = instantScrollView.frame.size
-		let imageViewSizesMetric = ["height":imageViewSize.height,"width":imageViewSize.width]
-		let imageViewVCons:Array = NSLayoutConstraint.constraintsWithVisualFormat("V:|-[imageView]", options: NSLayoutFormatOptions(0), metrics: imageViewSizesMetric, views: viewsDictionary)
-		let imageViewHCons:Array = NSLayoutConstraint.constraintsWithVisualFormat("H:|-[imageView]", options: NSLayoutFormatOptions(0), metrics: imageViewSizesMetric, views: viewsDictionary)
-		instantScrollView.addConstraints(imageViewHCons)
-		instantScrollView.addConstraints(imageViewVCons)
-		
-		//fixes image size
-		instantImageView.contentMode = .ScaleAspectFit
-		instantImageView.image = instantImage
+		//adding tap gesture recognizer
+		singleTouchToNewView()
 	}
 	
 	func setTheZoomScale() {
@@ -111,7 +86,7 @@ public class EasyZoom: NSObject,UIScrollViewDelegate {
 		let minScale = min(scaleWidth, scaleHeight)
 		instantScrollView.minimumZoomScale = minScale
 		
-		instantScrollView.maximumZoomScale = 1.0
+		instantScrollView.maximumZoomScale = 10.0
 		instantScrollView.zoomScale = minScale
 		
 	}
@@ -155,6 +130,26 @@ public class EasyZoom: NSObject,UIScrollViewDelegate {
 
 	}
 	
+	func panToFullScreen(recognizer:UIPanGestureRecognizer) {
+		let screenBounds:CGRect = UIScreen.mainScreen().bounds
+		let constantFrame:CGRect = instantImageView.frame
+		let translation = recognizer.translationInView(instantView)
+		if let view = recognizer.view {
+			view.center = CGPoint(x: view.center.x + translation.x , y: view.center.y + translation.y)
+			
+			if translation.y == 0 {
+				countToView += 1
+			}
+			
+			if countToView > 1 {
+
+				zoomForImageView()
+			}
+			
+			NSLog("Y= %f", translation.y)
+		}
+		recognizer.setTranslation(CGPointZero, inView: instantView)
+	}
 	
 //	func panToFullScreenView() {
 //		let panToFullScreenRecognizer = UIPanGestureRecognizer(target: self, action: "panToFullScreen:")
@@ -164,8 +159,7 @@ public class EasyZoom: NSObject,UIScrollViewDelegate {
 //	func panToFullScreen(recognizer:UIPanGestureRecognizer) {
 //		let constantFrame:CGRect = instantImageView.frame
 //		let translation = recognizer.translationInView(instantView)
-//		if let view = recognizer.view {
-//			view.center = CGPoint(x: view.center.x + translation.x , y: view.center.y + translation.y)
+//		if let view = recognizer.view { Y//			view.center = CGPoint(x: view.center.x + translation.x , y: view.center.y + translation.y)
 //			if (view.center.y + instantImageView.bounds.midY > instantView.bounds.midY) {
 //				instantView.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(0.5)
 //				instantScrollView.zoomScale = 0
@@ -191,20 +185,6 @@ public class EasyZoom: NSObject,UIScrollViewDelegate {
 		UIGraphicsEndImageContext()
 
 		return newImage
-	}
-	
-	
-	func panToFullScreen(recognizer:UIPanGestureRecognizer) {
-		let constantFrame:CGRect = instantImageView.frame
-		let translation = recognizer.translationInView(instantView)
-		if let view = recognizer.view {
-			view.center = CGPoint(x: view.center.x + translation.x , y: view.center.y + translation.y)
-			if (view.center.y + instantImageView.bounds.midY > instantView.bounds.midY) {
-				self.zoomForImageView()
-			}
-		}
-		recognizer.setTranslation(CGPointZero, inView: instantView)
-
 	}
 	
 	/**
