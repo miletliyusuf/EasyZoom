@@ -42,7 +42,7 @@ public class EasyZoom: NSObject,UIScrollViewDelegate {
 	 @param image: UIImage - The image of imageView
 	 @param superView: UIView - The superView which gonna cover zoomed imageView
 	 */
-	public func zoomForImageView() ->Void {
+	public func zoomForImageView() -> Void {
 		
 		//delegating of instant scrollView
 		instantScrollView.delegate = self
@@ -134,21 +134,31 @@ public class EasyZoom: NSObject,UIScrollViewDelegate {
 		let screenBounds:CGRect = UIScreen.mainScreen().bounds
 		let constantFrame:CGRect = instantImageView.frame
 		let translation = recognizer.translationInView(instantView)
-		if let view = recognizer.view {
-			view.center = CGPoint(x: view.center.x + translation.x , y: view.center.y + translation.y)
+		
+		switch (recognizer.state) {
+		case UIGestureRecognizerState.Began:
+			println("pan has begun")
 			
-			if translation.y == 0 {
-				countToView += 1
+			
+			break;
+		case UIGestureRecognizerState.Ended:
+			zoomForImageView()
+			println("pan is ended")
+			break;
+		case UIGestureRecognizerState.Changed:
+			println("pan is changed")
+			if let view = recognizer.view {
+				view.center = CGPoint(x: view.center.x + translation.x , y: view.center.y + translation.y)
 			}
-			
-			if countToView > 1 {
-
-				zoomForImageView()
-			}
-			
-			NSLog("Y= %f", translation.y)
+			recognizer.setTranslation(CGPointZero, inView: instantView)
+			break;
+		case UIGestureRecognizerState.Failed:
+			println("failed pan");
+			break;
+		default:
+			println("cancelled pan")
+			break;
 		}
-		recognizer.setTranslation(CGPointZero, inView: instantView)
 	}
 	
 //	func panToFullScreenView() {
