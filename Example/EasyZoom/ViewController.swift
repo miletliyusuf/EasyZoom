@@ -23,6 +23,7 @@ class ViewController: UIViewController {
 		catPicture = UIImage(named: "cat.jpg")
 		
 		zoom = EasyZoom(imageView: catImageView, image: catPicture, superView: catHolder)
+		zoom.fadeOutAnimationTime = 0.15
 		zoom.zoomForImageView()
 		zoom.mainView = self.view
 	}
