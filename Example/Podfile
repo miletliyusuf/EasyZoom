@@ -7,9 +7,4 @@ end
 
 target 'EasyZoom_Tests', :exclusive => true do
   pod "EasyZoom", :path => "../EasyZoom.podspec"
-
-  pod 'Quick', '~> 0.3.1'
-  pod 'Nimble'
-  pod 'FBSnapshotTestCase'
-  pod 'Nimble-Snapshots'
 end
