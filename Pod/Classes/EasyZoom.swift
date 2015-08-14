@@ -17,6 +17,8 @@ public class EasyZoom: NSObject,UIScrollViewDelegate {
 	
 	var doubleTapRecognizer:UITapGestureRecognizer
 	var singleTapRecognizer:UITapGestureRecognizer
+	var panGesture:UIPanGestureRecognizer
+	var touchBack:UITapGestureRecognizer
 	
 	var didDoubleTapped:Bool = false
 	
@@ -28,6 +30,8 @@ public class EasyZoom: NSObject,UIScrollViewDelegate {
 		
 		doubleTapRecognizer = UITapGestureRecognizer()
 		singleTapRecognizer = UITapGestureRecognizer()
+		panGesture = UIPanGestureRecognizer()
+		touchBack = UITapGestureRecognizer()
 
 		//scroll visible
 		instantScrollView.showsHorizontalScrollIndicator = false
@@ -146,9 +150,10 @@ public class EasyZoom: NSObject,UIScrollViewDelegate {
 		instantScrollView.setNeedsDisplay()
 		
 		//adding pan recognizer
-		var panGesture = UIPanGestureRecognizer(target: self, action: "panToFullScreen:")
+		panGesture = UIPanGestureRecognizer(target: self, action: "panToFullScreen:")
+		touchBack = UITapGestureRecognizer(target: self, action: "touchBackHandler:")
 		instantScrollView.addGestureRecognizer(panGesture)
-
+		instantScrollView.addGestureRecognizer(touchBack)
 	}
 	
 	/**
@@ -163,11 +168,11 @@ public class EasyZoom: NSObject,UIScrollViewDelegate {
 		switch (recognizer.state) {
 		case UIGestureRecognizerState.Began:
 			println("pan has begun")
-			
-			
 			break;
 		case UIGestureRecognizerState.Ended:
 			returnDefaultState()
+			instantScrollView.removeGestureRecognizer(panGesture)
+			instantScrollView.removeGestureRecognizer(touchBack)
 			println("pan is ended")
 			break;
 		case UIGestureRecognizerState.Changed:
@@ -186,15 +191,13 @@ public class EasyZoom: NSObject,UIScrollViewDelegate {
 		}
 	}
 	
+	func touchBackHandler(recognizer:UITapGestureRecognizer) {
+		returnDefaultState()
+		instantScrollView.removeGestureRecognizer(panGesture)
+		instantScrollView.removeGestureRecognizer(touchBack)
+	}
 
 	func cropTheImage(sourceImage:UIImage, i_width:CGFloat, i_height:CGFloat) -> UIImage {
-
-//		var oldWidth = sourceImage.size.width
-//		var scaleFactor = i_width / oldWidth
-//		
-//		var newHeight = sourceImage.size.height * scaleFactor
-//		var newWidth = oldWidth * scaleFactor
-		
 		var newHeight = i_width
 		var newWidth = i_height
 		
