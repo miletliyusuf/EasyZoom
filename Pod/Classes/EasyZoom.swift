@@ -154,6 +154,8 @@ public class EasyZoom: NSObject,UIScrollViewDelegate {
 		touchBack = UITapGestureRecognizer(target: self, action: "touchBackHandler:")
 		instantScrollView.addGestureRecognizer(panGesture)
 		instantScrollView.addGestureRecognizer(touchBack)
+		
+		touchBack.requireGestureRecognizerToFail(doubleTapRecognizer)
 	}
 	
 	/**
