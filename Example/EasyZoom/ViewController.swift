@@ -20,8 +20,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
 		
-//		self.view.backgroundColor = UIColor(red: 0.3, green: 0.3, blue: 0.3, alpha: 1.0)
-		
 		catPicture = UIImage(named: "cat.jpg")
 		
 		zoom = EasyZoom(imageView: catImageView, image: catPicture, superView: catHolder)
