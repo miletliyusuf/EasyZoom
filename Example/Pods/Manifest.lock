@@ -1,8 +1,10 @@
 PODS:
   - EasyZoom (0.1.0)
+  - Quick (0.3.1)
 
 DEPENDENCIES:
   - EasyZoom (from `../EasyZoom.podspec`)
+  - Quick (~> 0.3.0)
 
 EXTERNAL SOURCES:
   EasyZoom:
@@ -10,5 +12,6 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   EasyZoom: 9bb16d26f7d57785e70045aafd803e6097039a5b
+  Quick: 824572d3d198d51e52cf4aa722cebf7e59952a35
 
 COCOAPODS: 0.38.2

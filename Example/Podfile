@@ -7,4 +7,5 @@ end
 
 target 'EasyZoom_Tests', :exclusive => true do
   pod "EasyZoom", :path => "../EasyZoom.podspec"
+  pod 'Quick', '~> 0.3.0'
 end

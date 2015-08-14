@@ -7,101 +7,174 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		10095A7AE287E8E9DFE467F20C260077 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBF5F72256A1DCF98033955316A1EB9C /* Foundation.framework */; };
-		1CDAC773F032C123523A8D511DCBB2EE /* EasyZoom-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9411CDF7FA4A5FB4BED0888CD9B64060 /* EasyZoom-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		39B6462BA5156F3E07719C09464F4612 /* Pods-EasyZoom_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2238D1B08EFB5B11E63B590DC999E74B /* Pods-EasyZoom_Tests-dummy.m */; };
-		435FA5B8C6213CF2DCE2D122FC902569 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBF5F72256A1DCF98033955316A1EB9C /* Foundation.framework */; };
-		450399DE7E00701E370ACB10E4CD6A16 /* EasyZoom.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CF2C00D9EF486495BE27D030C181ABB6 /* EasyZoom.bundle */; };
-		47C684E4A62F344F50D51FC4CD613484 /* EasyZoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135CA9B1D1A9D3F2959BBA12FB0CE05E /* EasyZoom.swift */; };
-		601C1931A3EF35C97280CD6153777A42 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBF5F72256A1DCF98033955316A1EB9C /* Foundation.framework */; };
+		065060796D8EDA34E4BC0431F23CEF79 /* EasyZoom.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3F3AC052B712F2D4B67028C9DAB006F0 /* EasyZoom.bundle */; };
+		10095A7AE287E8E9DFE467F20C260077 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79570DC6C6A65FD10D3CC42940D16FA3 /* Foundation.framework */; };
+		1241F507AB5176F68C03F3608FB5558B /* ExampleHooks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0186E637336551C6A248A4330B7B2E /* ExampleHooks.swift */; };
+		13DF7EA9F829F626C04321A3E3DA682F /* World.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECEA659F1031FAA94D07BCA20722638 /* World.swift */; };
+		15BC349C62E5F7936C1E35CB58A3AC5A /* QCKDSL.m in Sources */ = {isa = PBXBuildFile; fileRef = 8617D930E4D359563D2E72A77A10FBBD /* QCKDSL.m */; };
+		1F86B2AE4791A61CC9B6247BDEEF953F /* Quick-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 112258B1AE8BC0997AF2E8D758BDC6E5 /* Quick-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1FCF2C642BCD0F0705B64A5FA760ABB6 /* DSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7B4FC2490489A2C8C7976B2A08F28B /* DSL.swift */; };
+		2003CB85F77E64DD6FC127B9AE54C4AE /* ExampleMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = C131B630EC5A2B45ECE65205C613EA04 /* ExampleMetadata.swift */; };
+		20D26357BDE6EF7FE70C487F14CFDF78 /* QuickConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C82A9CFA6D45BE24CC231E32CA5D173 /* QuickConfiguration.m */; };
+		237064326B4A1997EA2993DB479ED81F /* EasyZoom-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 45EF8782D759950B3916B0F0B7DC365C /* EasyZoom-dummy.m */; };
+		2724234812F7E36C68F16BA2382B06DE /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA737BA6D89563011DF20A7860105BF7 /* XCTest.framework */; };
+		2A5A3783C73A9242124C60F846534B4B /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A719617FF0E936A99179D006D911A487 /* Configuration.swift */; };
+		302CBF497F4787660F5DFC2B4FE19FA7 /* SuiteHooks.swift in Sources */ = {isa = PBXBuildFile; fileRef = B885064B397689E2CF53299029D95043 /* SuiteHooks.swift */; };
+		4067FE3FC371A5698420F24C6FF4C3EC /* Callsite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21284B35EEEBA0106D30D27C2AFCAD45 /* Callsite.swift */; };
+		44B14EF4CFF026892F822727A35AAB4A /* QuickSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = FD83A2C7EB8D339A8304EFFBDBF23B46 /* QuickSpec.m */; };
+		4550B376A60CDEC7CDF0651925CAABA8 /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BCE149A34F276D5D2682C4512BEEFF0 /* Example.swift */; };
+		48F33E3D8938E94F9D1580CF15574791 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79570DC6C6A65FD10D3CC42940D16FA3 /* Foundation.framework */; };
+		5BD86221731E4FD1D279E801E8A787CD /* Quick-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 405898307CA2C3AF8BCFD929E40EB6E1 /* Quick-dummy.m */; };
+		5E42B17A40142398B4BFF859DB8E39A5 /* EasyZoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D9C74BEA3A60FFEB27E711B65B1DC6 /* EasyZoom.swift */; };
+		649636E1275B3D7B75C399AEC26A9B82 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79570DC6C6A65FD10D3CC42940D16FA3 /* Foundation.framework */; };
+		733ACC74E90C975A006593C485A9AA2E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79570DC6C6A65FD10D3CC42940D16FA3 /* Foundation.framework */; };
 		7AE23A52300AD423303BC95B2E9EE47F /* Pods-EasyZoom_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 71D5F3220EB6EA90AF5BD67613DBE7F4 /* Pods-EasyZoom_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		882DA30C23F2F80A2E830F35F5F5ADDB /* Pods-EasyZoom_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A5BEEEAC86FAC0A6E7DB5F7D844D1C17 /* Pods-EasyZoom_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7EA00E09BB569AD738A75D6A84DD5E54 /* Quick.h in Headers */ = {isa = PBXBuildFile; fileRef = 32AE66E0DAA43818C9681AC6ABCA115B /* Quick.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		86D41B5EE99992A7A24EC3B1C980580A /* Pods-EasyZoom_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 51E570157D8E9BC335C3E1CE0B36F53F /* Pods-EasyZoom_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		878FAB75111AC38C7BCC0992F4AF320D /* QuickSpec.h in Headers */ = {isa = PBXBuildFile; fileRef = B1F80EA19C60ACAEEB44E7BD8142A629 /* QuickSpec.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		99B7E38B2CB606FB5D4A515727EBCEA7 /* Failure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4066904D9F9434DF19FB668B98F606E6 /* Failure.swift */; };
+		9F8B0747164C88DDE074E07C39D0886D /* NSString+QCKSelectorName.m in Sources */ = {isa = PBXBuildFile; fileRef = B2721CBAD899EE9B3DB4226FC142E13F /* NSString+QCKSelectorName.m */; };
+		A01B4A4114319173A042AB49133F3423 /* Closures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E10F916AA5095FEC6F8D5DCBD96ED4 /* Closures.swift */; };
+		A8C634D6EE27A9B5785D53FE91319AD6 /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F558A19FA65046B78B3817C867276312 /* Filter.swift */; };
+		ACCDD4D5C58D41C5BBDBEE477B101EA8 /* NSString+QCKSelectorName.h in Headers */ = {isa = PBXBuildFile; fileRef = 9764A033167A6DF2DD560A6F3255DF34 /* NSString+QCKSelectorName.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD87D2B272648641B03A62A787D6B33F /* ExampleGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BAACA873F38935490C335670740FA7E /* ExampleGroup.swift */; };
 		B241E12CAFED0971DAFB54AA62378486 /* Pods-EasyZoom_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9079D1C3C79490E3B97FCC4F9792DE12 /* Pods-EasyZoom_Example-dummy.m */; };
-		BE7DD65E5388336C6EDB70B7E8D20DD8 /* EasyZoom-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 302882F46DD99DDD4CA15E53A0EA7AC9 /* EasyZoom-dummy.m */; };
+		C56A41AC799C20118F46F7DA4258046D /* EasyZoom-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C21820BED303B7D44E57BC67FDA95842 /* EasyZoom-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D48B936B9B983E49696792F5D061D6EF /* World+DSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262200DD2B26E0249BEDE961042E9BA6 /* World+DSL.swift */; };
+		E3E2625E3C9E0CD23CDEECC11064E428 /* Pods-EasyZoom_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A0266234712FEF6A04423BDF2871300E /* Pods-EasyZoom_Tests-dummy.m */; };
+		E5CA2B7628DE4531F5A2A6FA484994B9 /* QuickConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 723856907D9BCAA1990B9E363626EC88 /* QuickConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F01E1FCB2A572174A77019E818432D1C /* QCKDSL.h in Headers */ = {isa = PBXBuildFile; fileRef = 5082C0F144C6860313EB6C7377E701BC /* QCKDSL.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		013765CCA04B249F0858234AE6465ED0 /* PBXContainerItemProxy */ = {
+		6C6C3CF25CEE985FE099CCBE2CEF3EC1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = ABD411229448B6A65506252E03FD8962;
+			remoteGlobalIDString = 0A3C65112BBCD57092AB594A8C49300F;
 			remoteInfo = EasyZoom;
 		};
-		0A5FF404067FCBD1F2A80415B6E690F9 /* PBXContainerItemProxy */ = {
+		A6CE5F33272F4091BE5D7911207BD0D6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 5113FC2BF6664E43B2FAAC725FC5CFA1;
+			remoteGlobalIDString = E46F7A3949A4CB02A0D2EDC3B7CC21AE;
+			remoteInfo = Quick;
+		};
+		AFFAF3AF0FDFA2F128A601740948BD75 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2B66DB1870C538D44A3E74CE33492A4C;
 			remoteInfo = "EasyZoom-EasyZoom";
 		};
-		FC886B1DE80F3FE1CFD8377909B5D788 /* PBXContainerItemProxy */ = {
+		F1AE1EC0A12A65360700162B0E4A97D3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = ABD411229448B6A65506252E03FD8962;
+			remoteGlobalIDString = 0A3C65112BBCD57092AB594A8C49300F;
 			remoteInfo = EasyZoom;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		135CA9B1D1A9D3F2959BBA12FB0CE05E /* EasyZoom.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EasyZoom.swift; sourceTree = "<group>"; };
+		112258B1AE8BC0997AF2E8D758BDC6E5 /* Quick-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Quick-umbrella.h"; sourceTree = "<group>"; };
+		11733A7F688C23C2640518BCB7BE13DB /* EasyZoom.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EasyZoom.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C82A9CFA6D45BE24CC231E32CA5D173 /* QuickConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QuickConfiguration.m; path = Quick/Configuration/QuickConfiguration.m; sourceTree = "<group>"; };
+		1F2C90BCEE6BACCF2E41B6DF8A22F591 /* Pods-EasyZoom_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EasyZoom_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		1F3136B75E9A05E54D2F0E14DBED63B0 /* Pods-EasyZoom_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EasyZoom_Example-resources.sh"; sourceTree = "<group>"; };
-		2238D1B08EFB5B11E63B590DC999E74B /* Pods-EasyZoom_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-EasyZoom_Tests-dummy.m"; sourceTree = "<group>"; };
-		2865C7BC95A07DF24AFE51EB5CF0E1E7 /* Pods_EasyZoom_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyZoom_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		302882F46DD99DDD4CA15E53A0EA7AC9 /* EasyZoom-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "EasyZoom-dummy.m"; sourceTree = "<group>"; };
+		21284B35EEEBA0106D30D27C2AFCAD45 /* Callsite.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Callsite.swift; path = Quick/Callsite.swift; sourceTree = "<group>"; };
+		262200DD2B26E0249BEDE961042E9BA6 /* World+DSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "World+DSL.swift"; path = "Quick/DSL/World+DSL.swift"; sourceTree = "<group>"; };
+		2BAACA873F38935490C335670740FA7E /* ExampleGroup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExampleGroup.swift; path = Quick/ExampleGroup.swift; sourceTree = "<group>"; };
+		32AE66E0DAA43818C9681AC6ABCA115B /* Quick.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Quick.h; path = Quick/Quick.h; sourceTree = "<group>"; };
 		35B45F7D87A407CB7350E68B27E405F6 /* Pods-EasyZoom_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EasyZoom_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		3F3AC052B712F2D4B67028C9DAB006F0 /* EasyZoom.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyZoom.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F9AC7A4287C231314E9AD1179353293 /* Quick.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Quick.modulemap; sourceTree = "<group>"; };
+		405898307CA2C3AF8BCFD929E40EB6E1 /* Quick-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Quick-dummy.m"; sourceTree = "<group>"; };
+		4066904D9F9434DF19FB668B98F606E6 /* Failure.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Failure.swift; path = Quick/Failure.swift; sourceTree = "<group>"; };
 		43339B78924FE3EF0A7C05788C5476D0 /* EasyZoom-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EasyZoom-prefix.pch"; sourceTree = "<group>"; };
-		4AB6F02935E45F1BD9762ACF32DD306A /* EasyZoom.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EasyZoom.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		45EF8782D759950B3916B0F0B7DC365C /* EasyZoom-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "EasyZoom-dummy.m"; sourceTree = "<group>"; };
+		5082C0F144C6860313EB6C7377E701BC /* QCKDSL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QCKDSL.h; path = Quick/DSL/QCKDSL.h; sourceTree = "<group>"; };
+		51E570157D8E9BC335C3E1CE0B36F53F /* Pods-EasyZoom_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-EasyZoom_Tests-umbrella.h"; sourceTree = "<group>"; };
 		57D19A5AF6B110C27A989C69B0E35A0C /* Pods-EasyZoom_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EasyZoom_Example.release.xcconfig"; sourceTree = "<group>"; };
-		5DF9C731282E4898B576BAC01B855689 /* Pods-EasyZoom_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EasyZoom_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		6106F63CBD802911B2A95501234FEDA3 /* EasyZoom.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = EasyZoom.modulemap; sourceTree = "<group>"; };
 		71D5F3220EB6EA90AF5BD67613DBE7F4 /* Pods-EasyZoom_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-EasyZoom_Example-umbrella.h"; sourceTree = "<group>"; };
-		71E906C66E2FE33D8783E1D0CD420A27 /* Pods-EasyZoom_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EasyZoom_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		723856907D9BCAA1990B9E363626EC88 /* QuickConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QuickConfiguration.h; path = Quick/Configuration/QuickConfiguration.h; sourceTree = "<group>"; };
+		78E10F916AA5095FEC6F8D5DCBD96ED4 /* Closures.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Closures.swift; path = Quick/Hooks/Closures.swift; sourceTree = "<group>"; };
+		79570DC6C6A65FD10D3CC42940D16FA3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7BCE149A34F276D5D2682C4512BEEFF0 /* Example.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Example.swift; path = Quick/Example.swift; sourceTree = "<group>"; };
 		7C15AA8A98137CE598D547E2D0E9BB85 /* Pods-EasyZoom_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EasyZoom_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		80B6EAB2979C9ED759ACFCF4EA821217 /* Pods-EasyZoom_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-EasyZoom_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8617D930E4D359563D2E72A77A10FBBD /* QCKDSL.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QCKDSL.m; path = Quick/DSL/QCKDSL.m; sourceTree = "<group>"; };
+		862C41D2F151B7579AEACE74E77935A3 /* Quick.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Quick.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C8E2E8AAC5FD3C9835BF9AF93C75F92 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8ECEA659F1031FAA94D07BCA20722638 /* World.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = World.swift; path = Quick/World.swift; sourceTree = "<group>"; };
 		9079D1C3C79490E3B97FCC4F9792DE12 /* Pods-EasyZoom_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-EasyZoom_Example-dummy.m"; sourceTree = "<group>"; };
-		9411CDF7FA4A5FB4BED0888CD9B64060 /* EasyZoom-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EasyZoom-umbrella.h"; sourceTree = "<group>"; };
+		90C83E8A765A244C1F909AB944D45082 /* Pods-EasyZoom_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EasyZoom_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		93F96F4880F600B6782369A0489AC066 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9764A033167A6DF2DD560A6F3255DF34 /* NSString+QCKSelectorName.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+QCKSelectorName.h"; path = "Quick/NSString+QCKSelectorName.h"; sourceTree = "<group>"; };
+		992C237565D1E4CA0FC65CD0D22DECD5 /* EasyZoom-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "EasyZoom-Private.xcconfig"; sourceTree = "<group>"; };
+		9A0186E637336551C6A248A4330B7B2E /* ExampleHooks.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExampleHooks.swift; path = Quick/Hooks/ExampleHooks.swift; sourceTree = "<group>"; };
 		9CFC21C5C80A5647218FB0C042F34EB9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A5BEEEAC86FAC0A6E7DB5F7D844D1C17 /* Pods-EasyZoom_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-EasyZoom_Tests-umbrella.h"; sourceTree = "<group>"; };
-		B360336CD0D3880B73D4CAE2ABD0903A /* EasyZoom-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "EasyZoom-Private.xcconfig"; sourceTree = "<group>"; };
+		A0266234712FEF6A04423BDF2871300E /* Pods-EasyZoom_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-EasyZoom_Tests-dummy.m"; sourceTree = "<group>"; };
+		A719617FF0E936A99179D006D911A487 /* Configuration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Configuration.swift; path = Quick/Configuration/Configuration.swift; sourceTree = "<group>"; };
+		AF7B4FC2490489A2C8C7976B2A08F28B /* DSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DSL.swift; path = Quick/DSL/DSL.swift; sourceTree = "<group>"; };
+		B1F80EA19C60ACAEEB44E7BD8142A629 /* QuickSpec.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QuickSpec.h; path = Quick/QuickSpec.h; sourceTree = "<group>"; };
+		B2721CBAD899EE9B3DB4226FC142E13F /* NSString+QCKSelectorName.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+QCKSelectorName.m"; path = "Quick/NSString+QCKSelectorName.m"; sourceTree = "<group>"; };
 		B779ECB685D6856E6EEACDF77A244851 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B885064B397689E2CF53299029D95043 /* SuiteHooks.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SuiteHooks.swift; path = Quick/Hooks/SuiteHooks.swift; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		BE19EC09C2657F49B63E0F60D5C11198 /* Pods-EasyZoom_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-EasyZoom_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C131B630EC5A2B45ECE65205C613EA04 /* ExampleMetadata.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExampleMetadata.swift; path = Quick/ExampleMetadata.swift; sourceTree = "<group>"; };
+		C21820BED303B7D44E57BC67FDA95842 /* EasyZoom-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EasyZoom-umbrella.h"; sourceTree = "<group>"; };
+		C2BB252EB3FD10E3904563415E6E89EF /* Quick.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Quick.xcconfig; sourceTree = "<group>"; };
 		C9B946FB1945425B61F4B7C4188806AE /* EasyZoom.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = EasyZoom.xcconfig; sourceTree = "<group>"; };
-		CF2C00D9EF486495BE27D030C181ABB6 /* EasyZoom.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyZoom.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		DBF5F72256A1DCF98033955316A1EB9C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CF010819F4B5806A404FEEE6FA140DD4 /* Quick-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Quick-Private.xcconfig"; sourceTree = "<group>"; };
+		DA737BA6D89563011DF20A7860105BF7 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		E0D9C74BEA3A60FFEB27E711B65B1DC6 /* EasyZoom.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EasyZoom.swift; sourceTree = "<group>"; };
 		E591ECA6C99EDB3200FEDADD72B3CEC6 /* Pods-EasyZoom_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EasyZoom_Example-frameworks.sh"; sourceTree = "<group>"; };
 		EA08E62ED44B5221477A4A3D3F1AFC3B /* Pods-EasyZoom_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EasyZoom_Tests-resources.sh"; sourceTree = "<group>"; };
+		EA3AC88DE115E53D923EB029EE579039 /* Quick-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Quick-prefix.pch"; sourceTree = "<group>"; };
 		EF9DCDB55416B52B882D096234067015 /* Pods-EasyZoom_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EasyZoom_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		F4095480910A46444FB34CFD36445738 /* Pods-EasyZoom_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-EasyZoom_Example.modulemap"; sourceTree = "<group>"; };
+		F459AA92120958AAA797B9B7963C200E /* Pods_EasyZoom_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyZoom_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F558A19FA65046B78B3817C867276312 /* Filter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Filter.swift; path = Quick/Filter.swift; sourceTree = "<group>"; };
 		F945BD48176916EA42C9F48796E71223 /* Pods-EasyZoom_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EasyZoom_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		FAB2FCE09218B58C29F610829F101D52 /* Pods-EasyZoom_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-EasyZoom_Tests.modulemap"; sourceTree = "<group>"; };
+		FD83A2C7EB8D339A8304EFFBDBF23B46 /* QuickSpec.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QuickSpec.m; path = Quick/QuickSpec.m; sourceTree = "<group>"; };
 		FF26D21380FA4D52B40AB1AFAAFD1AD4 /* Pods_EasyZoom_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyZoom_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		01A2BFCDB7B72BB7297374AF75B6C325 /* Frameworks */ = {
+		1590DCB61F676A98B8520CB6233A21E2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				435FA5B8C6213CF2DCE2D122FC902569 /* Foundation.framework in Frameworks */,
+				649636E1275B3D7B75C399AEC26A9B82 /* Foundation.framework in Frameworks */,
+				2724234812F7E36C68F16BA2382B06DE /* XCTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1EF1581EFE596C6B2A886ECCB1C61EDC /* Frameworks */ = {
+		4FBD615306F5B546403E0A6F410178D7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				601C1931A3EF35C97280CD6153777A42 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2A53BDF5B90A77F6639891B402D98B12 /* Frameworks */ = {
+		5A0E6B07A311CC68FD19610BC28A721E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48F33E3D8938E94F9D1580CF15574791 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4D3E88BF83C5B11A2BADF95E7CE2EF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				733ACC74E90C975A006593C485A9AA2E /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,6 +189,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		13055BDD15996C4856A94ED13646E240 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FE3AF1F13D3CE18AA7C931FC4C37557D /* Quick */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		1D36DE60B80082C38732E3149589C787 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				93F96F4880F600B6782369A0489AC066 /* Info.plist */,
+				3F9AC7A4287C231314E9AD1179353293 /* Quick.modulemap */,
+				C2BB252EB3FD10E3904563415E6E89EF /* Quick.xcconfig */,
+				CF010819F4B5806A404FEEE6FA140DD4 /* Quick-Private.xcconfig */,
+				405898307CA2C3AF8BCFD929E40EB6E1 /* Quick-dummy.m */,
+				EA3AC88DE115E53D923EB029EE579039 /* Quick-prefix.pch */,
+				112258B1AE8BC0997AF2E8D758BDC6E5 /* Quick-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Quick";
+			sourceTree = "<group>";
+		};
 		364A9BAA5150EDE28DB3247673576044 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -129,14 +225,22 @@
 			children = (
 				6106F63CBD802911B2A95501234FEDA3 /* EasyZoom.modulemap */,
 				C9B946FB1945425B61F4B7C4188806AE /* EasyZoom.xcconfig */,
-				B360336CD0D3880B73D4CAE2ABD0903A /* EasyZoom-Private.xcconfig */,
-				302882F46DD99DDD4CA15E53A0EA7AC9 /* EasyZoom-dummy.m */,
+				992C237565D1E4CA0FC65CD0D22DECD5 /* EasyZoom-Private.xcconfig */,
+				45EF8782D759950B3916B0F0B7DC365C /* EasyZoom-dummy.m */,
 				43339B78924FE3EF0A7C05788C5476D0 /* EasyZoom-prefix.pch */,
-				9411CDF7FA4A5FB4BED0888CD9B64060 /* EasyZoom-umbrella.h */,
+				C21820BED303B7D44E57BC67FDA95842 /* EasyZoom-umbrella.h */,
 				B779ECB685D6856E6EEACDF77A244851 /* Info.plist */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/EasyZoom";
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				672D1320B537524AB3A5A6B59F3A0AB5 /* iOS */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		503228E77AABF248769B045C56598C8B /* Pods-EasyZoom_Tests */ = {
@@ -146,21 +250,22 @@
 				FAB2FCE09218B58C29F610829F101D52 /* Pods-EasyZoom_Tests.modulemap */,
 				BE19EC09C2657F49B63E0F60D5C11198 /* Pods-EasyZoom_Tests-acknowledgements.markdown */,
 				F945BD48176916EA42C9F48796E71223 /* Pods-EasyZoom_Tests-acknowledgements.plist */,
-				2238D1B08EFB5B11E63B590DC999E74B /* Pods-EasyZoom_Tests-dummy.m */,
+				A0266234712FEF6A04423BDF2871300E /* Pods-EasyZoom_Tests-dummy.m */,
 				EF9DCDB55416B52B882D096234067015 /* Pods-EasyZoom_Tests-frameworks.sh */,
 				EA08E62ED44B5221477A4A3D3F1AFC3B /* Pods-EasyZoom_Tests-resources.sh */,
-				A5BEEEAC86FAC0A6E7DB5F7D844D1C17 /* Pods-EasyZoom_Tests-umbrella.h */,
-				5DF9C731282E4898B576BAC01B855689 /* Pods-EasyZoom_Tests.debug.xcconfig */,
-				71E906C66E2FE33D8783E1D0CD420A27 /* Pods-EasyZoom_Tests.release.xcconfig */,
+				51E570157D8E9BC335C3E1CE0B36F53F /* Pods-EasyZoom_Tests-umbrella.h */,
+				1F2C90BCEE6BACCF2E41B6DF8A22F591 /* Pods-EasyZoom_Tests.debug.xcconfig */,
+				90C83E8A765A244C1F909AB944D45082 /* Pods-EasyZoom_Tests.release.xcconfig */,
 			);
 			name = "Pods-EasyZoom_Tests";
 			path = "Target Support Files/Pods-EasyZoom_Tests";
 			sourceTree = "<group>";
 		};
-		53F661C0CA7190D2CF05023FB33D61E4 /* iOS */ = {
+		672D1320B537524AB3A5A6B59F3A0AB5 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				DBF5F72256A1DCF98033955316A1EB9C /* Foundation.framework */,
+				79570DC6C6A65FD10D3CC42940D16FA3 /* Foundation.framework */,
+				DA737BA6D89563011DF20A7860105BF7 /* XCTest.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
@@ -178,7 +283,8 @@
 			children = (
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
 				364A9BAA5150EDE28DB3247673576044 /* Development Pods */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				13055BDD15996C4856A94ED13646E240 /* Pods */,
 				CCA510CFBEA2D207524CDA0D73C3B561 /* Products */,
 				C7DE6E517743ACC91A58E860C75503A3 /* Targets Support Files */,
 			);
@@ -212,14 +318,6 @@
 			path = ../..;
 			sourceTree = "<group>";
 		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				53F661C0CA7190D2CF05023FB33D61E4 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		C7DE6E517743ACC91A58E860C75503A3 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -232,10 +330,11 @@
 		CCA510CFBEA2D207524CDA0D73C3B561 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CF2C00D9EF486495BE27D030C181ABB6 /* EasyZoom.bundle */,
-				4AB6F02935E45F1BD9762ACF32DD306A /* EasyZoom.framework */,
+				3F3AC052B712F2D4B67028C9DAB006F0 /* EasyZoom.bundle */,
+				11733A7F688C23C2640518BCB7BE13DB /* EasyZoom.framework */,
 				FF26D21380FA4D52B40AB1AFAAFD1AD4 /* Pods_EasyZoom_Example.framework */,
-				2865C7BC95A07DF24AFE51EB5CF0E1E7 /* Pods_EasyZoom_Tests.framework */,
+				F459AA92120958AAA797B9B7963C200E /* Pods_EasyZoom_Tests.framework */,
+				862C41D2F151B7579AEACE74E77935A3 /* Quick.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -243,22 +342,44 @@
 		E4B42593950B37FC6E7A0E9A88BD0511 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				135CA9B1D1A9D3F2959BBA12FB0CE05E /* EasyZoom.swift */,
+				E0D9C74BEA3A60FFEB27E711B65B1DC6 /* EasyZoom.swift */,
 			);
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		FE3AF1F13D3CE18AA7C931FC4C37557D /* Quick */ = {
+			isa = PBXGroup;
+			children = (
+				21284B35EEEBA0106D30D27C2AFCAD45 /* Callsite.swift */,
+				78E10F916AA5095FEC6F8D5DCBD96ED4 /* Closures.swift */,
+				A719617FF0E936A99179D006D911A487 /* Configuration.swift */,
+				AF7B4FC2490489A2C8C7976B2A08F28B /* DSL.swift */,
+				7BCE149A34F276D5D2682C4512BEEFF0 /* Example.swift */,
+				2BAACA873F38935490C335670740FA7E /* ExampleGroup.swift */,
+				9A0186E637336551C6A248A4330B7B2E /* ExampleHooks.swift */,
+				C131B630EC5A2B45ECE65205C613EA04 /* ExampleMetadata.swift */,
+				4066904D9F9434DF19FB668B98F606E6 /* Failure.swift */,
+				F558A19FA65046B78B3817C867276312 /* Filter.swift */,
+				9764A033167A6DF2DD560A6F3255DF34 /* NSString+QCKSelectorName.h */,
+				B2721CBAD899EE9B3DB4226FC142E13F /* NSString+QCKSelectorName.m */,
+				5082C0F144C6860313EB6C7377E701BC /* QCKDSL.h */,
+				8617D930E4D359563D2E72A77A10FBBD /* QCKDSL.m */,
+				32AE66E0DAA43818C9681AC6ABCA115B /* Quick.h */,
+				723856907D9BCAA1990B9E363626EC88 /* QuickConfiguration.h */,
+				1C82A9CFA6D45BE24CC231E32CA5D173 /* QuickConfiguration.m */,
+				B1F80EA19C60ACAEEB44E7BD8142A629 /* QuickSpec.h */,
+				FD83A2C7EB8D339A8304EFFBDBF23B46 /* QuickSpec.m */,
+				B885064B397689E2CF53299029D95043 /* SuiteHooks.swift */,
+				8ECEA659F1031FAA94D07BCA20722638 /* World.swift */,
+				262200DD2B26E0249BEDE961042E9BA6 /* World+DSL.swift */,
+				1D36DE60B80082C38732E3149589C787 /* Support Files */,
+			);
+			path = Quick;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		04CCE3B90E383DA326EA3823330F7EE3 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				882DA30C23F2F80A2E830F35F5F5ADDB /* Pods-EasyZoom_Tests-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		224AF3C687C779FD0B2020E872BC16CD /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -267,11 +388,32 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B31F0AFDCE50873F840272BFD06D9DC3 /* Headers */ = {
+		28D35A67D8AB643271FDC4E92F06A01C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1CDAC773F032C123523A8D511DCBB2EE /* EasyZoom-umbrella.h in Headers */,
+				C56A41AC799C20118F46F7DA4258046D /* EasyZoom-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D777E797F78B5A0F8A7DE2A8825DBF3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACCDD4D5C58D41C5BBDBEE477B101EA8 /* NSString+QCKSelectorName.h in Headers */,
+				F01E1FCB2A572174A77019E818432D1C /* QCKDSL.h in Headers */,
+				1F86B2AE4791A61CC9B6247BDEEF953F /* Quick-umbrella.h in Headers */,
+				7EA00E09BB569AD738A75D6A84DD5E54 /* Quick.h in Headers */,
+				E5CA2B7628DE4531F5A2A6FA484994B9 /* QuickConfiguration.h in Headers */,
+				878FAB75111AC38C7BCC0992F4AF320D /* QuickSpec.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83D623920B244A023CE3F1FBE46612A2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86D41B5EE99992A7A24EC3B1C980580A /* Pods-EasyZoom_Tests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,38 +431,39 @@
 			buildRules = (
 			);
 			dependencies = (
-				484F4FCB8C8A16E6CC08FBAB9E499A4E /* PBXTargetDependency */,
+				75427FD71C99EA5AE3BE3B8457C870C9 /* PBXTargetDependency */,
 			);
 			name = "Pods-EasyZoom_Example";
 			productName = "Pods-EasyZoom_Example";
 			productReference = FF26D21380FA4D52B40AB1AFAAFD1AD4 /* Pods_EasyZoom_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		3DAAD881F77E427CFAA27D6E4325FE99 /* Pods-EasyZoom_Tests */ = {
+		0A3C65112BBCD57092AB594A8C49300F /* EasyZoom */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 51503B83270903D92CAF95E3636B5A8F /* Build configuration list for PBXNativeTarget "Pods-EasyZoom_Tests" */;
+			buildConfigurationList = DD31E5824F3A439399A598E9F3BB1A93 /* Build configuration list for PBXNativeTarget "EasyZoom" */;
 			buildPhases = (
-				98371F94F3C718FAF02C3F9C1E6DDCB3 /* Sources */,
-				1EF1581EFE596C6B2A886ECCB1C61EDC /* Frameworks */,
-				04CCE3B90E383DA326EA3823330F7EE3 /* Headers */,
+				E8B221F2B1A807CEA94E1D529E9C2390 /* Sources */,
+				5A0E6B07A311CC68FD19610BC28A721E /* Frameworks */,
+				5B5EA18CEC4410BCB2B5332FEAAAF6E0 /* Resources */,
+				28D35A67D8AB643271FDC4E92F06A01C /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				4D9910E1F5A30BD794AF9A06CEBF0D7A /* PBXTargetDependency */,
+				627737E6F7CAB1BBD2FD3C0B15C4228C /* PBXTargetDependency */,
 			);
-			name = "Pods-EasyZoom_Tests";
-			productName = "Pods-EasyZoom_Tests";
-			productReference = 2865C7BC95A07DF24AFE51EB5CF0E1E7 /* Pods_EasyZoom_Tests.framework */;
+			name = EasyZoom;
+			productName = EasyZoom;
+			productReference = 11733A7F688C23C2640518BCB7BE13DB /* EasyZoom.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		5113FC2BF6664E43B2FAAC725FC5CFA1 /* EasyZoom-EasyZoom */ = {
+		2B66DB1870C538D44A3E74CE33492A4C /* EasyZoom-EasyZoom */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9CA42AE7FD603094BCB0DC78503A4EFA /* Build configuration list for PBXNativeTarget "EasyZoom-EasyZoom" */;
+			buildConfigurationList = 73EE4409A3F97E2685CD8A71A305B6B8 /* Build configuration list for PBXNativeTarget "EasyZoom-EasyZoom" */;
 			buildPhases = (
-				33299B086D8E310DB2EE172069E6BFBE /* Sources */,
-				2A53BDF5B90A77F6639891B402D98B12 /* Frameworks */,
-				DD0633C7A9CF7553424E309AA9B228AA /* Resources */,
+				9FFD8539BA77AFDC5A58AD4BCA09AACE /* Sources */,
+				4FBD615306F5B546403E0A6F410178D7 /* Frameworks */,
+				68081912BA03FFB21AC4568C4E2DFB00 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -328,26 +471,43 @@
 			);
 			name = "EasyZoom-EasyZoom";
 			productName = "EasyZoom-EasyZoom";
-			productReference = CF2C00D9EF486495BE27D030C181ABB6 /* EasyZoom.bundle */;
+			productReference = 3F3AC052B712F2D4B67028C9DAB006F0 /* EasyZoom.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
-		ABD411229448B6A65506252E03FD8962 /* EasyZoom */ = {
+		46C1FCBCD344C14FB5368287E8EAAE89 /* Pods-EasyZoom_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 51C4F4873E10BFD8A55990B6721C4BF0 /* Build configuration list for PBXNativeTarget "EasyZoom" */;
+			buildConfigurationList = 5116C5AFD55E8E1AA62120302921CC4F /* Build configuration list for PBXNativeTarget "Pods-EasyZoom_Tests" */;
 			buildPhases = (
-				70016E9FBA1AFFA845DF9932D1613AF0 /* Sources */,
-				01A2BFCDB7B72BB7297374AF75B6C325 /* Frameworks */,
-				11DF4BECE244757C347D170BAA727967 /* Resources */,
-				B31F0AFDCE50873F840272BFD06D9DC3 /* Headers */,
+				CA7CAB8C47D7C1E5AF59D3E17ABC011A /* Sources */,
+				B4D3E88BF83C5B11A2BADF95E7CE2EF7 /* Frameworks */,
+				83D623920B244A023CE3F1FBE46612A2 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				D53FDA09A3DE20E919C3B31E73842E1D /* PBXTargetDependency */,
+				1928D01EFF6CE3A6D6EFEC9797988C26 /* PBXTargetDependency */,
+				66E9AA7F4054F18C6DB984CEE594A9BB /* PBXTargetDependency */,
 			);
-			name = EasyZoom;
-			productName = EasyZoom;
-			productReference = 4AB6F02935E45F1BD9762ACF32DD306A /* EasyZoom.framework */;
+			name = "Pods-EasyZoom_Tests";
+			productName = "Pods-EasyZoom_Tests";
+			productReference = F459AA92120958AAA797B9B7963C200E /* Pods_EasyZoom_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E46F7A3949A4CB02A0D2EDC3B7CC21AE /* Quick */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4D79B4CFE36E28B760255EF929607BE /* Build configuration list for PBXNativeTarget "Quick" */;
+			buildPhases = (
+				8D722D098CB59AA74C04B591E00CEFE9 /* Sources */,
+				1590DCB61F676A98B8520CB6233A21E2 /* Frameworks */,
+				2D777E797F78B5A0F8A7DE2A8825DBF3 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Quick;
+			productName = Quick;
+			productReference = 862C41D2F151B7579AEACE74E77935A3 /* Quick.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -371,24 +531,25 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				ABD411229448B6A65506252E03FD8962 /* EasyZoom */,
-				5113FC2BF6664E43B2FAAC725FC5CFA1 /* EasyZoom-EasyZoom */,
+				0A3C65112BBCD57092AB594A8C49300F /* EasyZoom */,
+				2B66DB1870C538D44A3E74CE33492A4C /* EasyZoom-EasyZoom */,
 				02228D6308CF28C89AA6031783C68D76 /* Pods-EasyZoom_Example */,
-				3DAAD881F77E427CFAA27D6E4325FE99 /* Pods-EasyZoom_Tests */,
+				46C1FCBCD344C14FB5368287E8EAAE89 /* Pods-EasyZoom_Tests */,
+				E46F7A3949A4CB02A0D2EDC3B7CC21AE /* Quick */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		11DF4BECE244757C347D170BAA727967 /* Resources */ = {
+		5B5EA18CEC4410BCB2B5332FEAAAF6E0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				450399DE7E00701E370ACB10E4CD6A16 /* EasyZoom.bundle in Resources */,
+				065060796D8EDA34E4BC0431F23CEF79 /* EasyZoom.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DD0633C7A9CF7553424E309AA9B228AA /* Resources */ = {
+		68081912BA03FFB21AC4568C4E2DFB00 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -398,13 +559,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		33299B086D8E310DB2EE172069E6BFBE /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		592CCB95ED2C3917996AF5090157E36D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -413,76 +567,85 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		70016E9FBA1AFFA845DF9932D1613AF0 /* Sources */ = {
+		8D722D098CB59AA74C04B591E00CEFE9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE7DD65E5388336C6EDB70B7E8D20DD8 /* EasyZoom-dummy.m in Sources */,
-				47C684E4A62F344F50D51FC4CD613484 /* EasyZoom.swift in Sources */,
+				4067FE3FC371A5698420F24C6FF4C3EC /* Callsite.swift in Sources */,
+				A01B4A4114319173A042AB49133F3423 /* Closures.swift in Sources */,
+				2A5A3783C73A9242124C60F846534B4B /* Configuration.swift in Sources */,
+				1FCF2C642BCD0F0705B64A5FA760ABB6 /* DSL.swift in Sources */,
+				4550B376A60CDEC7CDF0651925CAABA8 /* Example.swift in Sources */,
+				AD87D2B272648641B03A62A787D6B33F /* ExampleGroup.swift in Sources */,
+				1241F507AB5176F68C03F3608FB5558B /* ExampleHooks.swift in Sources */,
+				2003CB85F77E64DD6FC127B9AE54C4AE /* ExampleMetadata.swift in Sources */,
+				99B7E38B2CB606FB5D4A515727EBCEA7 /* Failure.swift in Sources */,
+				A8C634D6EE27A9B5785D53FE91319AD6 /* Filter.swift in Sources */,
+				9F8B0747164C88DDE074E07C39D0886D /* NSString+QCKSelectorName.m in Sources */,
+				15BC349C62E5F7936C1E35CB58A3AC5A /* QCKDSL.m in Sources */,
+				5BD86221731E4FD1D279E801E8A787CD /* Quick-dummy.m in Sources */,
+				20D26357BDE6EF7FE70C487F14CFDF78 /* QuickConfiguration.m in Sources */,
+				44B14EF4CFF026892F822727A35AAB4A /* QuickSpec.m in Sources */,
+				302CBF497F4787660F5DFC2B4FE19FA7 /* SuiteHooks.swift in Sources */,
+				D48B936B9B983E49696792F5D061D6EF /* World+DSL.swift in Sources */,
+				13DF7EA9F829F626C04321A3E3DA682F /* World.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		98371F94F3C718FAF02C3F9C1E6DDCB3 /* Sources */ = {
+		9FFD8539BA77AFDC5A58AD4BCA09AACE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				39B6462BA5156F3E07719C09464F4612 /* Pods-EasyZoom_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA7CAB8C47D7C1E5AF59D3E17ABC011A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3E2625E3C9E0CD23CDEECC11064E428 /* Pods-EasyZoom_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8B221F2B1A807CEA94E1D529E9C2390 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				237064326B4A1997EA2993DB479ED81F /* EasyZoom-dummy.m in Sources */,
+				5E42B17A40142398B4BFF859DB8E39A5 /* EasyZoom.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		484F4FCB8C8A16E6CC08FBAB9E499A4E /* PBXTargetDependency */ = {
+		1928D01EFF6CE3A6D6EFEC9797988C26 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = EasyZoom;
-			target = ABD411229448B6A65506252E03FD8962 /* EasyZoom */;
-			targetProxy = 013765CCA04B249F0858234AE6465ED0 /* PBXContainerItemProxy */;
+			target = 0A3C65112BBCD57092AB594A8C49300F /* EasyZoom */;
+			targetProxy = 6C6C3CF25CEE985FE099CCBE2CEF3EC1 /* PBXContainerItemProxy */;
 		};
-		4D9910E1F5A30BD794AF9A06CEBF0D7A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = EasyZoom;
-			target = ABD411229448B6A65506252E03FD8962 /* EasyZoom */;
-			targetProxy = FC886B1DE80F3FE1CFD8377909B5D788 /* PBXContainerItemProxy */;
-		};
-		D53FDA09A3DE20E919C3B31E73842E1D /* PBXTargetDependency */ = {
+		627737E6F7CAB1BBD2FD3C0B15C4228C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "EasyZoom-EasyZoom";
-			target = 5113FC2BF6664E43B2FAAC725FC5CFA1 /* EasyZoom-EasyZoom */;
-			targetProxy = 0A5FF404067FCBD1F2A80415B6E690F9 /* PBXContainerItemProxy */;
+			target = 2B66DB1870C538D44A3E74CE33492A4C /* EasyZoom-EasyZoom */;
+			targetProxy = AFFAF3AF0FDFA2F128A601740948BD75 /* PBXContainerItemProxy */;
+		};
+		66E9AA7F4054F18C6DB984CEE594A9BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Quick;
+			target = E46F7A3949A4CB02A0D2EDC3B7CC21AE /* Quick */;
+			targetProxy = A6CE5F33272F4091BE5D7911207BD0D6 /* PBXContainerItemProxy */;
+		};
+		75427FD71C99EA5AE3BE3B8457C870C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = EasyZoom;
+			target = 0A3C65112BBCD57092AB594A8C49300F /* EasyZoom */;
+			targetProxy = F1AE1EC0A12A65360700162B0E4A97D3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0C4FD4F8FBA59A75BCF63D92A0E5B764 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 71E906C66E2FE33D8783E1D0CD420A27 /* Pods-EasyZoom_Tests.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-EasyZoom_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-EasyZoom_Tests/Pods-EasyZoom_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_EasyZoom_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		10DE1947DAC0ED28F6C0A9F9BD75D546 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -517,32 +680,59 @@
 			};
 			name = Release;
 		};
-		11FF641F847095DD823F497495DF8521 /* Release */ = {
+		35D1CA5F8943CDF557B59846200A82B1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B360336CD0D3880B73D4CAE2ABD0903A /* EasyZoom-Private.xcconfig */;
+			baseConfigurationReference = 992C237565D1E4CA0FC65CD0D22DECD5 /* EasyZoom-Private.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 0.1.0;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 0.1.0;
-				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/EasyZoom/EasyZoom-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/EasyZoom/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/EasyZoom/EasyZoom.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = EasyZoom;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		3BCF17B63C24272DC40612D6B23D5BE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F2C90BCEE6BACCF2E41B6DF8A22F591 /* Pods-EasyZoom_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-EasyZoom_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-EasyZoom_Tests/Pods-EasyZoom_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_EasyZoom_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
+		};
+		4EE5433AF78A012DF0C535B8D137E164 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 992C237565D1E4CA0FC65CD0D22DECD5 /* EasyZoom-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = EasyZoom;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
 		};
 		552D02D5BA751AC2E8790D2811D496CA /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -613,9 +803,63 @@
 			};
 			name = Debug;
 		};
-		8A497BA49D8E849706394CC80860A918 /* Debug */ = {
+		7D3E38429D5FC863D9C559DE9DC21E78 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5DF9C731282E4898B576BAC01B855689 /* Pods-EasyZoom_Tests.debug.xcconfig */;
+			baseConfigurationReference = CF010819F4B5806A404FEEE6FA140DD4 /* Quick-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 0.3.1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 0.3.1;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Quick/Quick-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Quick/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Quick/Quick.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Quick;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		816B3FFA79A242CC3B7089D49F5B0868 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 992C237565D1E4CA0FC65CD0D22DECD5 /* EasyZoom-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 0.1.0;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 0.1.0;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/EasyZoom/EasyZoom-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/EasyZoom/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/EasyZoom/EasyZoom.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = EasyZoom;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		928532FA11F444879D9C29A371C0169A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90C83E8A765A244C1F909AB944D45082 /* Pods-EasyZoom_Tests.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -629,23 +873,22 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/Pods-EasyZoom_Tests/Pods-EasyZoom_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_NAME = Pods_EasyZoom_Tests;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
-		9BB1D9ABA88935D38F38B8F6EA6601ED /* Debug */ = {
+		D8356F3C3DC49CC41BCA17AF1D432200 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B360336CD0D3880B73D4CAE2ABD0903A /* EasyZoom-Private.xcconfig */;
+			baseConfigurationReference = 992C237565D1E4CA0FC65CD0D22DECD5 /* EasyZoom-Private.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 0.1.0;
@@ -671,29 +914,33 @@
 			};
 			name = Debug;
 		};
-		AC96E0FB3A541F391C7D8EE6746B45F3 /* Debug */ = {
+		F3E9098373F26EE23664DA1C6B50DF35 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B360336CD0D3880B73D4CAE2ABD0903A /* EasyZoom-Private.xcconfig */;
+			baseConfigurationReference = CF010819F4B5806A404FEEE6FA140DD4 /* Quick-Private.xcconfig */;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 0.3.1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 0.3.1;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = EasyZoom;
+				GCC_PREFIX_HEADER = "Target Support Files/Quick/Quick-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Quick/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Quick/Quick.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Quick;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		CD50E4D485F5105E2662BEE34F03E8AC /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B360336CD0D3880B73D4CAE2ABD0903A /* EasyZoom-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = EasyZoom;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
 		};
 		F8648FA5DED67E3E21B7BD677C50CEAE /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -736,29 +983,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		51503B83270903D92CAF95E3636B5A8F /* Build configuration list for PBXNativeTarget "Pods-EasyZoom_Tests" */ = {
+		5116C5AFD55E8E1AA62120302921CC4F /* Build configuration list for PBXNativeTarget "Pods-EasyZoom_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8A497BA49D8E849706394CC80860A918 /* Debug */,
-				0C4FD4F8FBA59A75BCF63D92A0E5B764 /* Release */,
+				3BCF17B63C24272DC40612D6B23D5BE4 /* Debug */,
+				928532FA11F444879D9C29A371C0169A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		51C4F4873E10BFD8A55990B6721C4BF0 /* Build configuration list for PBXNativeTarget "EasyZoom" */ = {
+		73EE4409A3F97E2685CD8A71A305B6B8 /* Build configuration list for PBXNativeTarget "EasyZoom-EasyZoom" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9BB1D9ABA88935D38F38B8F6EA6601ED /* Debug */,
-				11FF641F847095DD823F497495DF8521 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		9CA42AE7FD603094BCB0DC78503A4EFA /* Build configuration list for PBXNativeTarget "EasyZoom-EasyZoom" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AC96E0FB3A541F391C7D8EE6746B45F3 /* Debug */,
-				CD50E4D485F5105E2662BEE34F03E8AC /* Release */,
+				4EE5433AF78A012DF0C535B8D137E164 /* Debug */,
+				35D1CA5F8943CDF557B59846200A82B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -768,6 +1006,24 @@
 			buildConfigurations = (
 				6E7EF73F1B6F9AB5C0E6C06FCE2E4C65 /* Debug */,
 				F8648FA5DED67E3E21B7BD677C50CEAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD31E5824F3A439399A598E9F3BB1A93 /* Build configuration list for PBXNativeTarget "EasyZoom" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8356F3C3DC49CC41BCA17AF1D432200 /* Debug */,
+				816B3FFA79A242CC3B7089D49F5B0868 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E4D79B4CFE36E28B760255EF929607BE /* Build configuration list for PBXNativeTarget "Quick" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3E9098373F26EE23664DA1C6B50DF35 /* Debug */,
+				7D3E38429D5FC863D9C559DE9DC21E78 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
