@@ -22,6 +22,8 @@ public class EasyZoom: NSObject,UIScrollViewDelegate {
 	
 	var didDoubleTapped:Bool = false
 	
+	public var fadeOutAnimationTime:NSTimeInterval?
+	
 	public init(imageView:UIImageView, image:UIImage, superView: UIView) {
 		instantView = superView
 		instantImageView = imageView
@@ -88,9 +90,14 @@ public class EasyZoom: NSObject,UIScrollViewDelegate {
 		
 		instantImage = cropTheImage(instantImage!, i_width: instantView!.frame.size.width, i_height: instantView!.frame.size.height)
 		
+		UIView.animateWithDuration(fadeOutAnimationTime!, animations: { () -> Void in
+			self.instantScrollView.frame = self.instantView!.frame
+			self.instantImageView!.frame = CGRect(origin: CGPoint(x: 0, y: 0), size: self.instantImage!.size)
+		})
+		
 //		//setting instant scrollView frame to user imageView
-		instantScrollView.frame = instantView!.frame
-		instantImageView!.frame = CGRect(origin: CGPoint(x: 0, y: 0), size: instantImage!.size)
+//		instantScrollView.frame = instantView!.frame
+//		instantImageView!.frame = CGRect(origin: CGPoint(x: 0, y: 0), size: instantImage!.size)
 
 //		//setting constraints
 		instantScrollView.contentSize = instantImage!.size
