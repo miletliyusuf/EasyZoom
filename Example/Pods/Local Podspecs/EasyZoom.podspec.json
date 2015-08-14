@@ -2,7 +2,7 @@
   "name": "EasyZoom",
   "version": "0.1.0",
   "summary": "This pod lets people have zoom action for their image views..",
-  "description": "\t\t\t\t\t\tThis pod lets people have zoom action for their image views and centerize their\n\t\t\t\t\timages very easily\n",
+  "description": "This pod lets people have zoom action for their image views and centerize their\nimages very easily",
   "homepage": "https://github.com/miletliyusuf/EasyZoom",
   "license": "MIT",
   "authors": {
